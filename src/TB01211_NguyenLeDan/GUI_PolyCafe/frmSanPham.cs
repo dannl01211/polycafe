@@ -1,0 +1,176 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using BLL_PolyCafe;
+using DTO_PolyCafe;
+
+namespace GUI_PolyCafe
+{
+    public partial class frmSanPham : Form
+    {
+        BUSSanPham busSanPham = new BUSSanPham();
+        public frmSanPham()
+        {
+            InitializeComponent();
+        }
+
+        private void frmSanPham_Load(object sender, EventArgs e)
+        {
+            LoadSanPham();
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoadSanPham()
+        {
+            BUSSanPham bUSSanPham = new BUSSanPham();
+            dgvDSSP.DataSource = null;
+            dgvDSSP.DataSource = bUSSanPham.GetSanPhamList();
+        }
+        private void ClearForm()
+        {
+            txtMaSP.Clear();
+            txtTenSP.Clear();
+            txtDonGia.Clear();
+            btnThem.Enabled = true;
+            btnSua.Enabled = false;
+            btnXoa.Enabled = true;
+            chbHoatDong.Checked = true;
+            picSanPham.Image = null;
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+
+                string tenSP = txtTenSP.Text.Trim();
+                string donGiaSP = txtDonGia.Text.Trim();
+                string maLoai = cboMaLoai.SelectedValue?.ToString();
+                bool trangThai = chbHoatDong.Checked;
+                if (string.IsNullOrEmpty(tenSP) || string.IsNullOrEmpty(donGiaSP) || string.IsNullOrEmpty(maLoai))
+                {
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                if (!decimal.TryParse(donGiaSP, out decimal donGia))
+                {
+                    MessageBox.Show("Đơn giá không hợp lệ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                SanPham sp = new SanPham
+                {
+                    TenSanPham = tenSP,
+                    DonGia = donGia,
+                    MaLoai = maLoai,
+                    TrangThai = trangThai,
+                    HinhAnh = ""
+                };
+                busSanPham.InsertSanPham(sp);
+                MessageBox.Show("Thêm sản phẩm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ClearForm();
+                LoadSanPham();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi thêm sản phẩm: " + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                string tenSP = txtTenSP.Text.Trim();
+                string donGiaSP = txtDonGia.Text.Trim();
+                string maLoai = cboMaLoai.SelectedValue?.ToString();
+                bool trangThai = chbHoatDong.Checked;
+                if (string.IsNullOrEmpty(tenSP) || string.IsNullOrEmpty(donGiaSP) || string.IsNullOrEmpty(maLoai))
+                {
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                if (!decimal.TryParse(donGiaSP, out decimal donGia))
+                {
+                    MessageBox.Show("Đơn giá không hợp lệ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                SanPham sp = new SanPham
+                {
+                    TenSanPham = tenSP,
+                    DonGia = donGia,
+                    MaLoai = maLoai,
+                    TrangThai = trangThai,
+                    HinhAnh = ""
+                };
+                busSanPham.UpdateSanPham(sp);
+                MessageBox.Show("Thêm sản phẩm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ClearForm();
+                LoadSanPham();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi thêm sản phẩm: " + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn muốn thoát khỏi chương trình", "Thoát",
+               MessageBoxButtons.YesNo,
+               MessageBoxIcon.Question
+               );
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void btnLammoi_Click(object sender, EventArgs e)
+        {
+            ClearForm();
+            LoadSanPham();
+        }
+
+        private void dgvDSSP_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow row = dgvDSSP.Rows[e.RowIndex];
+            txtMaSP.Text = row.Cells["MaSanPham"].Value.ToString();
+            txtTenSP.Text = row.Cells["TenSanPham"].Value.ToString();
+            txtDonGia.Text = row.Cells["DonGia"].Value.ToString();
+            bool trangThai = Convert.ToBoolean(row.Cells["TrangThai"].Value);
+            cboMaLoai.SelectedValue = row.Cells["MaLoai"].Value.ToString();
+            if (trangThai)
+            {
+                chbHoatDong.Checked = true;
+            }
+            else
+            {
+                chbHoatDong.Checked = true;
+            }
+            btnThem.Enabled = false;
+            btnSua.Enabled = true;
+            btnXoa.Enabled = true;
+        }
+    }
+}
