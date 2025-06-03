@@ -1,0 +1,11 @@
+D:\project vs studio\TB01211_NguyenLeDan\UTIL_PolyCafe\bin\Debug\UTIL_PolyCafe.dll
+D:\project vs studio\TB01211_NguyenLeDan\UTIL_PolyCafe\bin\Debug\UTIL_PolyCafe.pdb
+D:\project vs studio\TB01211_NguyenLeDan\UTIL_PolyCafe\bin\Debug\DTO_PolyCafe.dll
+D:\project vs studio\TB01211_NguyenLeDan\UTIL_PolyCafe\bin\Debug\DTO_PolyCafe.pdb
+D:\project vs studio\TB01211_NguyenLeDan\UTIL_PolyCafe\obj\Debug\UTIL_PolyCafe.csproj.AssemblyReference.cache
+D:\project vs studio\TB01211_NguyenLeDan\UTIL_PolyCafe\obj\Debug\UTIL_PolyCafe.csproj.CoreCompileInputs.cache
+D:\project vs studio\TB01211_NguyenLeDan\UTIL_PolyCafe\obj\Debug\UTIL_Pol.DDC24B11.Up2Date
+D:\project vs studio\TB01211_NguyenLeDan\UTIL_PolyCafe\obj\Debug\UTIL_PolyCafe.dll
+D:\project vs studio\TB01211_NguyenLeDan\UTIL_PolyCafe\obj\Debug\UTIL_PolyCafe.pdb
+D:\project vs studio\TB01211_NguyenLeDan\UTIL_PolyCafe\bin\Debug\UTIL_PolyCafe.dll.config
+D:\project vs studio\TB01211_NguyenLeDan\UTIL_PolyCafe\bin\Debug\DTO_PolyCafe.dll.config
