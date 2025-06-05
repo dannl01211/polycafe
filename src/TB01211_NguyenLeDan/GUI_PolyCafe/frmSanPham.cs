@@ -23,6 +23,7 @@ namespace GUI_PolyCafe
         private void frmSanPham_Load(object sender, EventArgs e)
         {
             LoadSanPham();
+            LoadLoaiSanPham();
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
@@ -30,6 +31,14 @@ namespace GUI_PolyCafe
 
         }
 
+        private void LoadLoaiSanPham() 
+        {
+            BUSLoaiSanPham bUSLoaiSanPham = new BUSLoaiSanPham();
+            List<LoaiSanPham> loaiSanPhamList = bUSLoaiSanPham.GetLoaiSanPhamList();
+            cboMaLoai.DataSource = loaiSanPhamList;
+            cboMaLoai.DisplayMember = "TenLoai";
+            cboMaLoai.ValueMember = "MaLoai";
+        }
         private void LoadSanPham()
         {
             BUSSanPham bUSSanPham = new BUSSanPham();
@@ -150,6 +159,7 @@ namespace GUI_PolyCafe
         {
             ClearForm();
             LoadSanPham();
+            LoadLoaiSanPham();
         }
 
         private void dgvDSSP_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

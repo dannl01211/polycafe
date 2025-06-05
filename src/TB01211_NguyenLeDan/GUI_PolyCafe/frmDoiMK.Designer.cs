@@ -215,8 +215,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(1382, 724);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1319, 695);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.cbXacNhanMK);
             this.Controls.Add(this.cbMatKhauMoi);
@@ -233,8 +233,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.MaximumSize = new System.Drawing.Size(1400, 771);
-            this.MinimumSize = new System.Drawing.Size(1400, 771);
             this.Name = "frmDoiMK";
             this.Text = "frmDoiMK";
             this.Load += new System.EventHandler(this.frmDoiMK_Load);

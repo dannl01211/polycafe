@@ -157,7 +157,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DALChiTietPhieu.cs" />
+    <Compile Include="DALLoaiSanPham.cs" />
     <Compile Include="DALNhanVien.cs" />
+    <Compile Include="DALPhieuBanHang.cs" />
     <Compile Include="DALSanPham.cs" />
     <Compile Include="DALTheLuuDong.cs" />
     <Compile Include="DBUtil.cs" />

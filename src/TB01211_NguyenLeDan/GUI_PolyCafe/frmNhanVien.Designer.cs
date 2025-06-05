@@ -134,7 +134,7 @@
             // 
             // txtMaNhanVien
             // 
-            this.txtMaNhanVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtMaNhanVien.BackColor = System.Drawing.Color.White;
             this.txtMaNhanVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMaNhanVien.Location = new System.Drawing.Point(947, 80);
             this.txtMaNhanVien.Name = "txtMaNhanVien";
@@ -143,7 +143,7 @@
             // 
             // txtHoTen
             // 
-            this.txtHoTen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.txtHoTen.BackColor = System.Drawing.Color.White;
             this.txtHoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHoTen.Location = new System.Drawing.Point(947, 149);
             this.txtHoTen.Name = "txtHoTen";
@@ -152,7 +152,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.txtEmail.BackColor = System.Drawing.Color.White;
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(947, 218);
             this.txtEmail.Name = "txtEmail";
@@ -161,7 +161,7 @@
             // 
             // txtMatKhau
             // 
-            this.txtMatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtMatKhau.BackColor = System.Drawing.Color.White;
             this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMatKhau.Location = new System.Drawing.Point(947, 279);
             this.txtMatKhau.Name = "txtMatKhau";
@@ -170,7 +170,7 @@
             // 
             // txtXNMatKhau
             // 
-            this.txtXNMatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.txtXNMatKhau.BackColor = System.Drawing.Color.White;
             this.txtXNMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtXNMatKhau.Location = new System.Drawing.Point(947, 345);
             this.txtXNMatKhau.Name = "txtXNMatKhau";
@@ -179,18 +179,18 @@
             // 
             // txtTim
             // 
-            this.txtTim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.txtTim.BackColor = System.Drawing.Color.White;
             this.txtTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTim.Location = new System.Drawing.Point(178, 75);
+            this.txtTim.Location = new System.Drawing.Point(176, 58);
             this.txtTim.Name = "txtTim";
             this.txtTim.Size = new System.Drawing.Size(252, 30);
             this.txtTim.TabIndex = 14;
             // 
             // btnTim
             // 
-            this.btnTim.BackColor = System.Drawing.Color.LawnGreen;
+            this.btnTim.BackColor = System.Drawing.Color.White;
             this.btnTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTim.Location = new System.Drawing.Point(34, 69);
+            this.btnTim.Location = new System.Drawing.Point(34, 58);
             this.btnTim.Name = "btnTim";
             this.btnTim.Size = new System.Drawing.Size(104, 36);
             this.btnTim.TabIndex = 15;
@@ -199,9 +199,9 @@
             // 
             // btnSua
             // 
-            this.btnSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnSua.BackColor = System.Drawing.Color.White;
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(1134, 548);
+            this.btnSua.Location = new System.Drawing.Point(1161, 548);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(121, 43);
             this.btnSua.TabIndex = 17;
@@ -211,7 +211,7 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnThoat.BackColor = System.Drawing.Color.White;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.Location = new System.Drawing.Point(920, 618);
             this.btnThoat.Name = "btnThoat";
@@ -224,11 +224,11 @@
             // dgvDSNV
             // 
             this.dgvDSNV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDSNV.Location = new System.Drawing.Point(34, 129);
+            this.dgvDSNV.Location = new System.Drawing.Point(8, 113);
             this.dgvDSNV.Name = "dgvDSNV";
             this.dgvDSNV.RowHeadersWidth = 51;
             this.dgvDSNV.RowTemplate.Height = 24;
-            this.dgvDSNV.Size = new System.Drawing.Size(614, 583);
+            this.dgvDSNV.Size = new System.Drawing.Size(683, 570);
             this.dgvDSNV.TabIndex = 20;
             this.dgvDSNV.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSNV_CellDoubleClick);
             // 
@@ -313,9 +313,9 @@
             // 
             // btnLammoi
             // 
-            this.btnLammoi.BackColor = System.Drawing.Color.Aqua;
+            this.btnLammoi.BackColor = System.Drawing.Color.White;
             this.btnLammoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLammoi.Location = new System.Drawing.Point(691, 548);
+            this.btnLammoi.Location = new System.Drawing.Point(717, 548);
             this.btnLammoi.Name = "btnLammoi";
             this.btnLammoi.Size = new System.Drawing.Size(121, 43);
             this.btnLammoi.TabIndex = 29;
@@ -325,11 +325,11 @@
             // 
             // btnThem
             // 
-            this.btnThem.BackColor = System.Drawing.Color.Khaki;
+            this.btnThem.BackColor = System.Drawing.Color.White;
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ForeColor = System.Drawing.Color.Black;
             this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(840, 548);
+            this.btnThem.Location = new System.Drawing.Point(864, 548);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(121, 43);
             this.btnThem.TabIndex = 16;
@@ -339,9 +339,9 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.BackColor = System.Drawing.Color.Yellow;
+            this.btnXoa.BackColor = System.Drawing.Color.White;
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(987, 548);
+            this.btnXoa.Location = new System.Drawing.Point(1017, 548);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(121, 43);
             this.btnXoa.TabIndex = 18;
@@ -353,8 +353,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LemonChiffon;
-            this.ClientSize = new System.Drawing.Size(1303, 724);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1319, 695);
             this.Controls.Add(this.btnLammoi);
             this.Controls.Add(this.pnVaiTro);
             this.Controls.Add(this.pnTrangThai);
@@ -376,8 +376,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.MaximumSize = new System.Drawing.Size(1321, 771);
-            this.MinimumSize = new System.Drawing.Size(1321, 771);
             this.Name = "frmNhanVien";
             this.Text = "frmNhanVien";
             this.Load += new System.EventHandler(this.frmNhanVien_Load);

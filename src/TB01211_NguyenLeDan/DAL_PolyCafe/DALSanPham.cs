@@ -19,7 +19,7 @@ namespace DAL_PolyCafe
             object result = DBUtil.ScalarQuery(sql, thamSo);
             if (result != null && result.ToString().StartsWith(prefix))
             {
-                string maxCode = result.ToString().Substring(3);
+                string maxCode = result.ToString().Substring(2);
                 int newNumber = int.Parse(maxCode) + 1;
                 return $"{prefix}{newNumber:D3}";
             }

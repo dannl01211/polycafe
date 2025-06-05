@@ -27,9 +27,8 @@ namespace GUI_PolyCafe
 
         private void MenuStripDoiMK_Click(object sender, EventArgs e)
         {
-            frmDoiMK doiMK = new frmDoiMK();
-            doiMK.ShowDialog();
-            
+            openChildForm(new frmDoiMK());
+
         }
 
         private Form currenFormChild;
@@ -65,8 +64,7 @@ namespace GUI_PolyCafe
 
         private void nhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmNhanVien nv = new frmNhanVien();
-            nv.ShowDialog();
+            openChildForm(new frmNhanVien());
         }
 
         private void quảnLýToolStripMenuItem_Click(object sender, EventArgs e)
@@ -107,8 +105,17 @@ namespace GUI_PolyCafe
 
         private void thẻLưuĐộngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmTheLuuDong theLuuDong = new frmTheLuuDong();
-            theLuuDong.ShowDialog();
+            openChildForm(new frmTheLuuDong());
+        }
+
+        private void MenuStripSanPham_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frmSanPham());
+        }
+
+        private void loạiSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frmLoaiSanPham());
         }
     }
 }
