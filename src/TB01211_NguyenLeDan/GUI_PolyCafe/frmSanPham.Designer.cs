@@ -41,6 +41,7 @@
             this.cboMaLoai = new System.Windows.Forms.ComboBox();
             this.chbNgungBan = new System.Windows.Forms.CheckBox();
             this.chbHoatDong = new System.Windows.Forms.CheckBox();
+            this.picSanPham = new System.Windows.Forms.PictureBox();
             this.txtDonGia = new System.Windows.Forms.TextBox();
             this.txtTenSP = new System.Windows.Forms.TextBox();
             this.txtMaSP = new System.Windows.Forms.TextBox();
@@ -51,11 +52,10 @@
             this.label11 = new System.Windows.Forms.Label();
             this.gbTacvu = new System.Windows.Forms.GroupBox();
             this.btnThem = new System.Windows.Forms.Button();
-            this.picSanPham = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSSP)).BeginInit();
             this.gbThongTinSP.SuspendLayout();
-            this.gbTacvu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picSanPham)).BeginInit();
+            this.gbTacvu.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -129,6 +129,7 @@
             this.btnChonAnh.TabIndex = 20;
             this.btnChonAnh.Text = "Chọn ảnh";
             this.btnChonAnh.UseVisualStyleBackColor = true;
+            this.btnChonAnh.Click += new System.EventHandler(this.btnChonAnh_Click);
             // 
             // btnTim
             // 
@@ -203,6 +204,14 @@
             this.chbHoatDong.TabIndex = 24;
             this.chbHoatDong.Text = "Hoạt động";
             this.chbHoatDong.UseVisualStyleBackColor = true;
+            // 
+            // picSanPham
+            // 
+            this.picSanPham.Location = new System.Drawing.Point(478, 36);
+            this.picSanPham.Name = "picSanPham";
+            this.picSanPham.Size = new System.Drawing.Size(229, 221);
+            this.picSanPham.TabIndex = 21;
+            this.picSanPham.TabStop = false;
             // 
             // txtDonGia
             // 
@@ -303,14 +312,6 @@
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // picSanPham
-            // 
-            this.picSanPham.Location = new System.Drawing.Point(478, 36);
-            this.picSanPham.Name = "picSanPham";
-            this.picSanPham.Size = new System.Drawing.Size(229, 221);
-            this.picSanPham.TabIndex = 21;
-            this.picSanPham.TabStop = false;
-            // 
             // frmSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -328,8 +329,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSSP)).EndInit();
             this.gbThongTinSP.ResumeLayout(false);
             this.gbThongTinSP.PerformLayout();
-            this.gbTacvu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picSanPham)).EndInit();
+            this.gbTacvu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

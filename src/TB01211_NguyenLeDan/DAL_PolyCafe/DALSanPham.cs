@@ -116,10 +116,21 @@ namespace DAL_PolyCafe
             return list.Count > 0 ? list[0] : null;
         }
 
-        public List<SanPham> selectAll()
+        public List<SanPham> selectAll(int trangThai = -1)
         {
-            string sql = "SELECT * FROM SanPham";
-            return SelectBySql(sql, new List<object>());
+            //string sql = "SELECT * FROM SanPham";
+            string sql = "SELECT MaSanPham, TenSanPham, DonGia, LoaiSanPham.MaLoai, HinhAnh, TrangThai, TenLoai " +
+                "FROM SanPham INNER JOIN LoaiSanPham ON SanPham.MaLoai = LoaiSanPham.MaLoai ";
+            List<object> p = new List<object>();
+            if (trangThai > -1)
+            {
+                sql += "WHERE SanPham.TrangThai = @0";
+            }
+
+            p.Add(trangThai);
+
+
+            return SelectBySql(sql, p);
         }
     }
 }

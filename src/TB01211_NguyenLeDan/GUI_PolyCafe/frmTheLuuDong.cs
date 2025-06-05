@@ -37,6 +37,7 @@ namespace GUI_PolyCafe
             BUSTheLuuDong bUSTheLuuDong = new BUSTheLuuDong();
             dgvDSTheLuuDong.DataSource = null;
             dgvDSTheLuuDong.DataSource = bUSTheLuuDong.GetTheLuuDongList();
+            dgvDSTheLuuDong.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void ClearForm()

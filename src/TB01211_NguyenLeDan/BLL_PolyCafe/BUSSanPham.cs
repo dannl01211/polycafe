@@ -12,9 +12,9 @@ namespace BLL_PolyCafe
     {
         DALSanPham dalSanPham = new DALSanPham();
 
-        public List<SanPham> GetSanPhamList()
+        public List<SanPham> GetSanPhamList(int trangThai = -1)
         {
-            return dalSanPham.selectAll();
+            return dalSanPham.selectAll(trangThai);
         }
 
         public string InsertSanPham(SanPham sp)

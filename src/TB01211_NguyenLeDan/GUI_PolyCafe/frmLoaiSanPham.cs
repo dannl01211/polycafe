@@ -15,6 +15,7 @@ namespace GUI_PolyCafe
     public partial class frmLoaiSanPham : Form
     {
         BUSLoaiSanPham busLoaiSanPham = new BUSLoaiSanPham();
+        
         public frmLoaiSanPham()
         {
             InitializeComponent();
@@ -22,7 +23,8 @@ namespace GUI_PolyCafe
 
         private void frmLoaiSanPham_Load(object sender, EventArgs e)
         {
-
+            ClearForm();
+            LoadDanhSachLoaiSP();
         }
 
         private void LoadDanhSachLoaiSP() 
@@ -30,7 +32,7 @@ namespace GUI_PolyCafe
             BUSLoaiSanPham busLoaiSanPham = new BUSLoaiSanPham();
             dgvDSLoaiSP.DataSource = null;
             dgvDSLoaiSP.DataSource = busLoaiSanPham.GetLoaiSanPhamList();
-
+            
         }
         private void ClearForm() 
         {
@@ -58,7 +60,7 @@ namespace GUI_PolyCafe
         {
             try
             {
-                string maLoai = txtMaLoai.Text.Trim();
+                
                 string tenLoai = txtTenLoai.Text.Trim();
                 string ghiChu = txtGhiChu.Text.Trim();
                 if (string.IsNullOrEmpty(ghiChu) || string.IsNullOrEmpty(tenLoai))
@@ -68,7 +70,7 @@ namespace GUI_PolyCafe
                 }
                 LoaiSanPham loaisp = new LoaiSanPham
                 {
-                    MaLoai = maLoai,
+                    
                     TenLoai = tenLoai,
                     GhiChu = ghiChu
                 };

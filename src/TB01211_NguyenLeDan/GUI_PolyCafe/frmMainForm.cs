@@ -64,7 +64,7 @@ namespace GUI_PolyCafe
 
         private void nhânViênToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            openChildForm(new frmNhanVien());
+            
         }
 
         private void quảnLýToolStripMenuItem_Click(object sender, EventArgs e)
@@ -116,6 +116,16 @@ namespace GUI_PolyCafe
         private void loạiSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
         {
             openChildForm(new frmLoaiSanPham());
+        }
+
+        private void nhanVienToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frmNhanVien());
+        }
+
+        private void phiếuBánHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frmPhieuBanHang());
         }
     }
 }

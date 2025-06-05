@@ -44,6 +44,7 @@ namespace GUI_PolyCafe
             BUSSanPham bUSSanPham = new BUSSanPham();
             dgvDSSP.DataSource = null;
             dgvDSSP.DataSource = bUSSanPham.GetSanPhamList();
+            
         }
         private void ClearForm()
         {
@@ -78,13 +79,15 @@ namespace GUI_PolyCafe
                     return;
                 }
 
+                string savedPath = ImageUtil.SaveImage(picSanPham.Image, "Uploads/SanPham");
+
                 SanPham sp = new SanPham
                 {
                     TenSanPham = tenSP,
                     DonGia = donGia,
                     MaLoai = maLoai,
                     TrangThai = trangThai,
-                    HinhAnh = ""
+                    HinhAnh = savedPath,
                 };
                 busSanPham.InsertSanPham(sp);
                 MessageBox.Show("Thêm sản phẩm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -101,11 +104,20 @@ namespace GUI_PolyCafe
         {
             try
             {
-
+                string maSP = txtMaSP.Text.Trim();
                 string tenSP = txtTenSP.Text.Trim();
                 string donGiaSP = txtDonGia.Text.Trim();
                 string maLoai = cboMaLoai.SelectedValue?.ToString();
                 bool trangThai = chbHoatDong.Checked;
+
+                if(chbHoatDong.Checked == false)
+                {
+                    trangThai = false;
+                }
+                else
+                {
+                    trangThai = true;
+                }
                 if (string.IsNullOrEmpty(tenSP) || string.IsNullOrEmpty(donGiaSP) || string.IsNullOrEmpty(maLoai))
                 {
                     MessageBox.Show("Vui lòng nhập đầy đủ thông tin sản phẩm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -119,6 +131,7 @@ namespace GUI_PolyCafe
 
                 SanPham sp = new SanPham
                 {
+                    MaSanPham = maSP,
                     TenSanPham = tenSP,
                     DonGia = donGia,
                     MaLoai = maLoai,
@@ -126,7 +139,7 @@ namespace GUI_PolyCafe
                     HinhAnh = ""
                 };
                 busSanPham.UpdateSanPham(sp);
-                MessageBox.Show("Thêm sản phẩm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Cập nhập sản phẩm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ClearForm();
                 LoadSanPham();
             }
@@ -139,8 +152,30 @@ namespace GUI_PolyCafe
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
+            try
+            {
+                string maSP = txtMaSP.Text.Trim();
+                if (string.IsNullOrEmpty(maSP))
+                {
+                    MessageBox.Show("Vui lòng chọn sản phẩm để xóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa sản phẩm này?", "Xác nhận xóa",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (result == DialogResult.Yes)
+                {
+                    busSanPham.DeleteSanPham(maSP);
+                    MessageBox.Show("Xóa sản phẩm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    ClearForm();
+                    LoadSanPham();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi xóa sản phẩm: " + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
 
+            }
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -181,6 +216,17 @@ namespace GUI_PolyCafe
             btnThem.Enabled = false;
             btnSua.Enabled = true;
             btnXoa.Enabled = true;
+        }
+
+        private void btnChonAnh_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                picSanPham.Image = Image.FromFile(openFileDialog.FileName);
+            }
         }
     }
 }

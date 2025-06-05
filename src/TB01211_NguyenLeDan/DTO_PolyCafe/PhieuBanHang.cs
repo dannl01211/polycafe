@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace DTO_PolyCafe
 {
-    internal class PhieuBanHang
+    public class PhieuBanHang
     {
+        public string MaPhieu { get; set; }
+        public string MaThe { get; set; }
+        public string MaNhanVien { get; set; }
+        public string ChuSoHuu { get; set; }
+        public string HoTen { get; set; }
+        public bool TrangThai { get; set; } = true;
+        public DateTime NgayTao { get; set; } = new DateTime();
     }
 }

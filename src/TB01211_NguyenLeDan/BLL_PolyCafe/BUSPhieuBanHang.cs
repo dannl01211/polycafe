@@ -3,10 +3,75 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DAL_PolyCafe;
+using DTO_PolyCafe;
 
 namespace BLL_PolyCafe
 {
-    internal class BUSPhieuBanHang
+    public class BUSPhieuBanHang
     {
+        DALPhieuBanHang dalPhieuBanHang = new DALPhieuBanHang();
+        public List<PhieuBanHang> GetListPhieuBanHang(string maThe)
+        {
+            return dalPhieuBanHang.selectAll(maThe);
+        }
+
+        public string InsertPhieuBanHang(PhieuBanHang PBH)
+        {
+            try
+            {
+                PBH.MaPhieu = dalPhieuBanHang.generatePhieuBanHang();
+                if (string.IsNullOrEmpty(PBH.MaPhieu))
+                {
+                    return "Mã phiếu bán hàng không hợp lệ.";
+                }
+
+                dalPhieuBanHang.insertPhieuBanHang(PBH);
+                return string.Empty;
+            }
+            catch (Exception ex)
+            {
+                //return "Thêm mới không thành công.";
+                return "Lỗi: " + ex.Message;
+            }
+        }
+
+        public string UpdatePhieuBanHang(PhieuBanHang PBH)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(PBH.MaPhieu))
+                {
+                    return "Mã phiếu không hợp lệ.";
+                }
+
+                dalPhieuBanHang.updatePhieuBanHang(PBH);
+                return string.Empty;
+            }
+            catch (Exception ex)
+            {
+                //return "Cập nhật không thành công.";
+                return "Lỗi: " + ex.Message;
+            }
+        }
+
+        public string DeletePhieuBanHang(string maPhieu)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(maPhieu))
+                {
+                    return "Mã phiếu bán hàng không hợp lệ.";
+                }
+
+                dalPhieuBanHang.deletePhieuBanHang(maPhieu);
+                return string.Empty;
+            }
+            catch (Exception ex)
+            {
+                //return "Xóa không thành công.";
+                return "Lỗi: " + ex.Message;
+            }
+        }
     }
 }

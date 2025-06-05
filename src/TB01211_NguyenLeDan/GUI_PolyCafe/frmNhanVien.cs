@@ -35,6 +35,7 @@ namespace GUI_PolyCafe
             BUSNhanVien bUSNhanVien = new BUSNhanVien();
             dgvDSNV.DataSource = null;
             dgvDSNV.DataSource = bUSNhanVien.GetNhanVienList();
+            
         }
         private void ClearForm() 
         {

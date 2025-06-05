@@ -220,6 +220,7 @@
     <Compile Include="frmTheLuuDong.Designer.cs">
       <DependentUpon>frmTheLuuDong.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helper\ImageUtil.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmChiTietPhieu.resx">
