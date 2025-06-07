@@ -11,7 +11,7 @@ namespace DAL_PolyCafe
 {
     public class DALChiTietPhieu
     {
-        public string generateChiTietPhieu()
+        public string generateChiTietID()
         {
             string prefix = "CTP";
             string sql = "SELECT MAX(MaChiTiet) FROM ChiTietPhieu";
@@ -39,9 +39,9 @@ namespace DAL_PolyCafe
                     entity.MaChiTiet = reader.GetString(0);
                     entity.MaPhieu = reader.GetString(1);
                     entity.MaSanPham = reader.GetString(2);
-                    entity.TenSanPham = reader.GetString(3);
-                    entity.SoLuong = reader.GetInt32(4);
-                    entity.DonGia = reader.GetDecimal(5);
+                    entity.SoLuong = reader.GetInt32(3);
+                    entity.DonGia = reader.GetDecimal(4);
+                    entity.TenSanPham = reader.GetString(5);
                     list.Add(entity);
                 }
             }
@@ -99,11 +99,13 @@ namespace DAL_PolyCafe
 
         }
 
-        public void updateChiTiet(ChiTietPhieu ct)
+        public void updateSoluong(ChiTietPhieu ct)
         {
             try
             {
-                string sql = @"UPDATE ChiTietPhieu SET SoLuong = @1 WHERE MaChiTiet = @0";
+                string sql = @"UPDATE ChiTietPhieu 
+                   SET SoLuong = @1 
+                   WHERE MaChiTiet = @0";
                 List<object> thamSo = new List<object>();
                 thamSo.Add(ct.MaChiTiet);
                 thamSo.Add(ct.SoLuong);

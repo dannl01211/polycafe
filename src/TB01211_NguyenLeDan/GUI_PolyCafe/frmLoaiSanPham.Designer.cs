@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtTenLoai = new System.Windows.Forms.TextBox();
             this.txtMaLoai = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -104,6 +105,14 @@
             // dgvDSLoaiSP
             // 
             this.dgvDSLoaiSP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LightBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDSLoaiSP.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvDSLoaiSP.Location = new System.Drawing.Point(553, 78);
             this.dgvDSLoaiSP.Name = "dgvDSLoaiSP";
             this.dgvDSLoaiSP.RowHeadersWidth = 51;

@@ -54,7 +54,7 @@ namespace GUI_PolyCafe
             string username = txtTenDN.Text;
             string password = txtMatKhau.Text;
 
-            NhanVien nv = busNhanVien.DangNhap("hoa.nguyen@cafe.com", "haha");
+            NhanVien nv = busNhanVien.DangNhap("hoa.nguyen@cafe.com", "password1");
             if (nv == null)
             {
                 MessageBox.Show(this, "Tài khoản hoặc mật khẩu không chính xác", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);

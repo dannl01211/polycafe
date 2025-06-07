@@ -11,22 +11,23 @@ namespace BLL_PolyCafe
     public class BUSPhieuBanHang
     {
         DALPhieuBanHang dalPhieuBanHang = new DALPhieuBanHang();
+        
         public List<PhieuBanHang> GetListPhieuBanHang(string maThe)
         {
             return dalPhieuBanHang.selectAll(maThe);
         }
 
-        public string InsertPhieuBanHang(PhieuBanHang PBH)
+        public string InsertPhieuBanHang(PhieuBanHang pbh)
         {
             try
             {
-                PBH.MaPhieu = dalPhieuBanHang.generatePhieuBanHang();
-                if (string.IsNullOrEmpty(PBH.MaPhieu))
+                pbh.MaPhieu = dalPhieuBanHang.generateMaPhieu();
+                if (string.IsNullOrEmpty(pbh.MaPhieu))
                 {
                     return "Mã phiếu bán hàng không hợp lệ.";
                 }
 
-                dalPhieuBanHang.insertPhieuBanHang(PBH);
+                dalPhieuBanHang.insertPhieuBanHang(pbh);
                 return string.Empty;
             }
             catch (Exception ex)
@@ -36,16 +37,16 @@ namespace BLL_PolyCafe
             }
         }
 
-        public string UpdatePhieuBanHang(PhieuBanHang PBH)
+        public string UpdatePhieuBanHang(PhieuBanHang pbh)
         {
             try
             {
-                if (string.IsNullOrEmpty(PBH.MaPhieu))
+                if (string.IsNullOrEmpty(pbh.MaPhieu))
                 {
                     return "Mã phiếu không hợp lệ.";
                 }
 
-                dalPhieuBanHang.updatePhieuBanHang(PBH);
+                dalPhieuBanHang.updateNhanVien(pbh);
                 return string.Empty;
             }
             catch (Exception ex)

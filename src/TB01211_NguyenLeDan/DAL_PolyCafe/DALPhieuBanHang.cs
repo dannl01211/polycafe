@@ -11,7 +11,7 @@ namespace DAL_PolyCafe
 {
     public class DALPhieuBanHang
     {
-        public string generatePhieuBanHang()
+        public string generateMaPhieu()
         {
             string prefix = "PBH";
             string sql = "SELECT MAX(MaPhieu) FROM PhieuBanHang";
@@ -27,17 +27,18 @@ namespace DAL_PolyCafe
             return $"{prefix}001";
         }
 
-        public void insertPhieuBanHang(PhieuBanHang PBH)
+        public void insertPhieuBanHang(PhieuBanHang pbh)
         {
             try
             {
-                string sql = @"INSERT INTO PhieuBanHang (MaPhieu, MaThe, MaNhanVien, NgayTao, TrangThai) VALUES (@0, @1, @2, @3, @4)";
+                string sql = @"INSERT INTO PhieuBanHang (MaPhieu, MaThe, MaNhanVien, NgayTao, TrangThai) 
+                   VALUES (@0, @1, @2, @3, @4)";
                 List<object> thamSo = new List<object>();
-                thamSo.Add(PBH.MaPhieu);
-                thamSo.Add(PBH.MaThe);
-                thamSo.Add(PBH.MaNhanVien);
-                thamSo.Add(PBH.NgayTao);
-                thamSo.Add(PBH.TrangThai);
+                thamSo.Add(pbh.MaPhieu);
+                thamSo.Add(pbh.MaThe);
+                thamSo.Add(pbh.MaNhanVien);
+                thamSo.Add(pbh.NgayTao);
+                thamSo.Add(pbh.TrangThai);
                 DBUtil.Update(sql, thamSo);
             }
             catch (Exception e)
@@ -47,17 +48,19 @@ namespace DAL_PolyCafe
 
         }
 
-        public void updatePhieuBanHang(PhieuBanHang PBH)
+        public void updateNhanVien(PhieuBanHang pbh)
         {
             try
             {
-                string sql = @"UPDATE PhieuBanHang SET MaThe = @1, MaNhanVien = @2, NgayTao = @3, TrangThai = @4 WHERE MaPhieu = @0";
+                string sql = @"UPDATE PhieuBanHang 
+                   SET MaThe = @1, MaNhanVien = @2, NgayTao = @3, TrangThai = @4 
+                   WHERE MaPhieu = @0";
                 List<object> thamSo = new List<object>();
-                thamSo.Add(PBH.MaPhieu);
-                thamSo.Add(PBH.MaThe);
-                thamSo.Add(PBH.MaNhanVien);
-                thamSo.Add(PBH.NgayTao);
-                thamSo.Add(PBH.TrangThai);
+                thamSo.Add(pbh.MaPhieu);
+                thamSo.Add(pbh.MaThe);
+                thamSo.Add(pbh.MaNhanVien);
+                thamSo.Add(pbh.NgayTao);
+                thamSo.Add(pbh.TrangThai);
                 DBUtil.Update(sql, thamSo);
             }
             catch (Exception e)

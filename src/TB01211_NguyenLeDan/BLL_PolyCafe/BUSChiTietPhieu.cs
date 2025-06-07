@@ -20,8 +20,8 @@ namespace BLL_PolyCafe
         {
             try
             {
-                ct.MaChiTiet = dalChiTietPhieu.generateChiTietPhieu();
-                if (string.IsNullOrEmpty(ct.MaChiTiet))
+                ct.MaPhieu = dalChiTietPhieu.generateChiTietID();
+                if (string.IsNullOrEmpty(ct.MaPhieu))
                 {
                     return "Mã chi tiết phiếu không hợp lệ.";
                 }
@@ -36,16 +36,16 @@ namespace BLL_PolyCafe
             }
         }
 
-        public string UpdateSoLuong(ChiTietPhieu ct)
+        public string UpdateSoLuong(ChiTietPhieu pbh)
         {
             try
             {
-                if (string.IsNullOrEmpty(ct.MaChiTiet))
+                if (string.IsNullOrEmpty(pbh.MaPhieu))
                 {
                     return "Mã chi tiết phiếu không hợp lệ.";
                 }
 
-                dalChiTietPhieu.updateChiTiet(ct);
+                dalChiTietPhieu.updateSoluong(pbh);
                 return string.Empty;
             }
             catch (Exception ex)

@@ -21,7 +21,7 @@ namespace GUI_PolyCafe
         private List<SanPham> lstSanPham;
         bool isActive = true;
 
-        public frmChiTietPhieu(DTO_PolyCafe.TheLuuDong the, PhieuBanHang phieu, NhanVien nv)
+        public frmChiTietPhieu(TheLuuDong the, PhieuBanHang phieu, NhanVien nv)
         {
             InitializeComponent();
             theLuuDong = the;
@@ -66,7 +66,7 @@ namespace GUI_PolyCafe
             dgvSanPham.Columns["MaSanPham"].HeaderText = "Mã Sản Phẩm";
             dgvSanPham.Columns["TenSanPham"].HeaderText = "Tên Sản Phẩm";
             dgvSanPham.Columns["DonGia"].HeaderText = "Đơn Gía";
-            dgvSanPham.Columns["TenLoai"].HeaderText = "Loại Sản Phẩm";
+            dgvSanPham.Columns["MaLoai"].HeaderText = "Loại Sản Phẩm";
             dgvSanPham.Columns["HinhAnh"].HeaderText = "Hình Ảnh";
 
 
@@ -78,7 +78,7 @@ namespace GUI_PolyCafe
             BUSChiTietPhieu bus = new BUSChiTietPhieu();
             lstChiTiet = bus.GetChiTietPhieuList(maPhieu);
             dgvChiTietPhieu.DataSource = lstChiTiet;
-            dgvChiTietPhieu.Columns["MaChiTiet"].Visible = false;
+            
             dgvChiTietPhieu.Columns["MaPhieu"].Visible = false;
             dgvChiTietPhieu.Columns["MaSanPham"].Visible = false;
             dgvChiTietPhieu.Columns["TenSanPham"].HeaderText = "Sản Phẩm";
