@@ -7,7 +7,7 @@ using DAL_PolyCafe;
 
 namespace BLL_PolyCafe
 {
-    public class BLL_ThongKe
+    public class BUS_ThongKe
     {
         DALThongKe dal = new DALThongKe();
 

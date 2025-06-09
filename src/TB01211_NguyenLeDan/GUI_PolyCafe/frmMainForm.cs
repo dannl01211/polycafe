@@ -127,5 +127,10 @@ namespace GUI_PolyCafe
         {
             openChildForm(new frmPhieuBanHang());
         }
+
+        private void doanhThuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frmThongKe());
+        }
     }
 }

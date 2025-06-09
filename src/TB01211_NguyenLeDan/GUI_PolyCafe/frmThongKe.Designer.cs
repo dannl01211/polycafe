@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.lblSanPham = new System.Windows.Forms.Label();
             this.lblNhanVien = new System.Windows.Forms.Label();
             this.lblDoanhThu = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dgvTheoLoai = new System.Windows.Forms.DataGridView();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartDoanhThu = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTheoLoai)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartDoanhThu)).BeginInit();
             this.SuspendLayout();
             // 
             // lblSanPham
@@ -88,28 +88,28 @@
             this.dgvTheoLoai.Size = new System.Drawing.Size(1074, 256);
             this.dgvTheoLoai.TabIndex = 4;
             // 
-            // chart1
+            // chartDoanhThu
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(94, 383);
-            this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(1033, 300);
-            this.chart1.TabIndex = 5;
-            this.chart1.Text = "chart1";
+            chartArea1.Name = "ChartArea1";
+            this.chartDoanhThu.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartDoanhThu.Legends.Add(legend1);
+            this.chartDoanhThu.Location = new System.Drawing.Point(94, 383);
+            this.chartDoanhThu.Name = "chartDoanhThu";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartDoanhThu.Series.Add(series1);
+            this.chartDoanhThu.Size = new System.Drawing.Size(1033, 300);
+            this.chartDoanhThu.TabIndex = 5;
+            this.chartDoanhThu.Text = "chart1";
             // 
             // frmThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1319, 695);
-            this.Controls.Add(this.chart1);
+            this.Controls.Add(this.chartDoanhThu);
             this.Controls.Add(this.dgvTheoLoai);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblDoanhThu);
@@ -119,7 +119,7 @@
             this.Text = "frmThongKe";
             this.Load += new System.EventHandler(this.frmThongKe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTheoLoai)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartDoanhThu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,6 +132,6 @@
         private System.Windows.Forms.Label lblDoanhThu;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridView dgvTheoLoai;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartDoanhThu;
     }
 }
