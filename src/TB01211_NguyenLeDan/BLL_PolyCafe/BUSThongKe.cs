@@ -4,35 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL_PolyCafe;
+using DTO_PolyCafe;
 
 namespace BLL_PolyCafe
 {
     public class BUS_ThongKe
     {
-        DALThongKe dal = new DALThongKe();
+        private DALThongKe dal = new DALThongKe();
 
-        public int TongSanPham()
-        {
-            return dal.DemSanPham();
-        }
 
-        public int TongNhanVien()
+        public List<ThongKe> GetThongKeDoanhThuTheoNgay(DateTime tuNgay, DateTime denNgay)
         {
-            return dal.DemNhanVien();
+            return dal.GetDoanhThuTheoLoaiTheoNgay(tuNgay, denNgay);
         }
-
-        public List<dynamic> LaySanPhamTheoLoai()
+        public List<ThongKe> GetThongKeDoanhThuTheoLoai(string ma, DateTime tuNgay, DateTime denNgay)
         {
-            return dal.SanPhamTheoLoai();
-        }
-
-        public decimal LayTongDoanhThu()
-        {
-            return dal.TongDoanhThu();
-        }
-        public List<dynamic> LayDoanhThuTheoNgay()
-        {
-            return dal.DoanhThuTheoNgay();
+            return dal.GetDoanhThuTheoLoai(ma, tuNgay, denNgay);
         }
 
     }

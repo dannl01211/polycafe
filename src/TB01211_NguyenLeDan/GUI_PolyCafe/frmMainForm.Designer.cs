@@ -177,13 +177,15 @@
             // 
             this.loạiHàngToolStripMenuItem.Name = "loạiHàngToolStripMenuItem";
             this.loạiHàngToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.loạiHàngToolStripMenuItem.Text = "Loại hàng ";
+            this.loạiHàngToolStripMenuItem.Text = "Loại sản phẩm";
+            this.loạiHàngToolStripMenuItem.Click += new System.EventHandler(this.loạiHàngToolStripMenuItem_Click);
             // 
             // nhânViênToolStripMenuItem1
             // 
             this.nhânViênToolStripMenuItem1.Name = "nhânViênToolStripMenuItem1";
             this.nhânViênToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
             this.nhânViênToolStripMenuItem1.Text = "Nhân viên";
+            this.nhânViênToolStripMenuItem1.Click += new System.EventHandler(this.nhânViênToolStripMenuItem1_Click);
             // 
             // huongDanToolStripMenuItem
             // 

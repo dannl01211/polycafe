@@ -164,6 +164,7 @@
     <Compile Include="DALSanPham.cs" />
     <Compile Include="DALTheLuuDong.cs" />
     <Compile Include="DALThongKe.cs" />
+    <Compile Include="DALThongKeNhanVien.cs" />
     <Compile Include="DBUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

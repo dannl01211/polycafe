@@ -78,7 +78,7 @@ namespace GUI_PolyCafe
             BUSChiTietPhieu bus = new BUSChiTietPhieu();
             lstChiTiet = bus.GetChiTietPhieuList(maPhieu);
             dgvChiTietPhieu.DataSource = lstChiTiet;
-            
+            dgvChiTietPhieu.Columns["MaChiTiet"].Visible = false;
             dgvChiTietPhieu.Columns["MaPhieu"].Visible = false;
             dgvChiTietPhieu.Columns["MaSanPham"].Visible = false;
             dgvChiTietPhieu.Columns["TenSanPham"].HeaderText = "Sản Phẩm";

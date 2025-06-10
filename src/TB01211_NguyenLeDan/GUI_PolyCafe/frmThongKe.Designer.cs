@@ -28,45 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.lblSanPham = new System.Windows.Forms.Label();
             this.lblNhanVien = new System.Windows.Forms.Label();
             this.lblDoanhThu = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.dgvTheoLoai = new System.Windows.Forms.DataGridView();
             this.chartDoanhThu = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTheoLoai)).BeginInit();
+            this.cboLoaiSanPham = new System.Windows.Forms.ComboBox();
+            this.dtpTuNgay = new System.Windows.Forms.DateTimePicker();
+            this.dtpDenNgay = new System.Windows.Forms.DateTimePicker();
+            this.btnThongKe = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chartDoanhThu)).BeginInit();
             this.SuspendLayout();
             // 
             // lblSanPham
             // 
             this.lblSanPham.AutoSize = true;
-            this.lblSanPham.Location = new System.Drawing.Point(131, 80);
+            this.lblSanPham.Location = new System.Drawing.Point(101, 69);
             this.lblSanPham.Name = "lblSanPham";
-            this.lblSanPham.Size = new System.Drawing.Size(68, 16);
+            this.lblSanPham.Size = new System.Drawing.Size(95, 16);
             this.lblSanPham.TabIndex = 0;
-            this.lblSanPham.Text = "Sản phẩm";
+            this.lblSanPham.Text = "Loại sản phẩm";
+            this.lblSanPham.Click += new System.EventHandler(this.lblSanPham_Click);
             // 
             // lblNhanVien
             // 
             this.lblNhanVien.AutoSize = true;
-            this.lblNhanVien.Location = new System.Drawing.Point(524, 80);
+            this.lblNhanVien.Location = new System.Drawing.Point(508, 69);
             this.lblNhanVien.Name = "lblNhanVien";
-            this.lblNhanVien.Size = new System.Drawing.Size(67, 16);
+            this.lblNhanVien.Size = new System.Drawing.Size(56, 16);
             this.lblNhanVien.TabIndex = 1;
-            this.lblNhanVien.Text = "Nhân viên";
+            this.lblNhanVien.Text = "Từ ngày";
             // 
             // lblDoanhThu
             // 
             this.lblDoanhThu.AutoSize = true;
-            this.lblDoanhThu.Location = new System.Drawing.Point(853, 80);
+            this.lblDoanhThu.Location = new System.Drawing.Point(848, 69);
             this.lblDoanhThu.Name = "lblDoanhThu";
-            this.lblDoanhThu.Size = new System.Drawing.Size(67, 16);
+            this.lblDoanhThu.Size = new System.Drawing.Size(64, 16);
             this.lblDoanhThu.TabIndex = 2;
-            this.lblDoanhThu.Text = "Doanh thu";
+            this.lblDoanhThu.Text = "Đến ngày";
             // 
             // label4
             // 
@@ -78,39 +81,64 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "THỐNG KÊ";
             // 
-            // dgvTheoLoai
-            // 
-            this.dgvTheoLoai.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTheoLoai.Location = new System.Drawing.Point(68, 121);
-            this.dgvTheoLoai.Name = "dgvTheoLoai";
-            this.dgvTheoLoai.RowHeadersWidth = 51;
-            this.dgvTheoLoai.RowTemplate.Height = 24;
-            this.dgvTheoLoai.Size = new System.Drawing.Size(1074, 256);
-            this.dgvTheoLoai.TabIndex = 4;
-            // 
             // chartDoanhThu
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartDoanhThu.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartDoanhThu.Legends.Add(legend1);
-            this.chartDoanhThu.Location = new System.Drawing.Point(94, 383);
+            chartArea2.Name = "ChartArea1";
+            this.chartDoanhThu.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartDoanhThu.Legends.Add(legend2);
+            this.chartDoanhThu.Location = new System.Drawing.Point(104, 204);
             this.chartDoanhThu.Name = "chartDoanhThu";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartDoanhThu.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartDoanhThu.Series.Add(series2);
             this.chartDoanhThu.Size = new System.Drawing.Size(1033, 300);
             this.chartDoanhThu.TabIndex = 5;
             this.chartDoanhThu.Text = "chart1";
+            // 
+            // cboLoaiSanPham
+            // 
+            this.cboLoaiSanPham.FormattingEnabled = true;
+            this.cboLoaiSanPham.Location = new System.Drawing.Point(104, 88);
+            this.cboLoaiSanPham.Name = "cboLoaiSanPham";
+            this.cboLoaiSanPham.Size = new System.Drawing.Size(169, 24);
+            this.cboLoaiSanPham.TabIndex = 6;
+            // 
+            // dtpTuNgay
+            // 
+            this.dtpTuNgay.Location = new System.Drawing.Point(477, 91);
+            this.dtpTuNgay.Name = "dtpTuNgay";
+            this.dtpTuNgay.Size = new System.Drawing.Size(200, 22);
+            this.dtpTuNgay.TabIndex = 7;
+            // 
+            // dtpDenNgay
+            // 
+            this.dtpDenNgay.Location = new System.Drawing.Point(826, 91);
+            this.dtpDenNgay.Name = "dtpDenNgay";
+            this.dtpDenNgay.Size = new System.Drawing.Size(200, 22);
+            this.dtpDenNgay.TabIndex = 8;
+            // 
+            // btnThongKe
+            // 
+            this.btnThongKe.Location = new System.Drawing.Point(1117, 75);
+            this.btnThongKe.Name = "btnThongKe";
+            this.btnThongKe.Size = new System.Drawing.Size(97, 37);
+            this.btnThongKe.TabIndex = 9;
+            this.btnThongKe.Text = "Thống kê";
+            this.btnThongKe.UseVisualStyleBackColor = true;
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
             // frmThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1319, 695);
+            this.Controls.Add(this.btnThongKe);
+            this.Controls.Add(this.dtpDenNgay);
+            this.Controls.Add(this.dtpTuNgay);
+            this.Controls.Add(this.cboLoaiSanPham);
             this.Controls.Add(this.chartDoanhThu);
-            this.Controls.Add(this.dgvTheoLoai);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblDoanhThu);
             this.Controls.Add(this.lblNhanVien);
@@ -118,7 +146,6 @@
             this.Name = "frmThongKe";
             this.Text = "frmThongKe";
             this.Load += new System.EventHandler(this.frmThongKe_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTheoLoai)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartDoanhThu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -131,7 +158,10 @@
         private System.Windows.Forms.Label lblNhanVien;
         private System.Windows.Forms.Label lblDoanhThu;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView dgvTheoLoai;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartDoanhThu;
+        private System.Windows.Forms.ComboBox cboLoaiSanPham;
+        private System.Windows.Forms.DateTimePicker dtpTuNgay;
+        private System.Windows.Forms.DateTimePicker dtpDenNgay;
+        private System.Windows.Forms.Button btnThongKe;
     }
 }

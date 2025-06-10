@@ -229,3 +229,4 @@ D:\DuAnMau\polycafe\src\TB01211_NguyenLeDan\GUI_PolyCafe\obj\Debug\GUI_PolyCafe.
 D:\DuAnMau\polycafe\src\TB01211_NguyenLeDan\GUI_PolyCafe\obj\Debug\GUI_PolyCafe.frmChiTietPhieu.resources
 D:\DuAnMau\polycafe\src\TB01211_NguyenLeDan\GUI_PolyCafe\obj\Debug\GUI_PolyCafe.frmPhieuBanHang.resources
 D:\DuAnMau\polycafe\src\TB01211_NguyenLeDan\GUI_PolyCafe\obj\Debug\GUI_PolyCafe.frmThongKe.resources
+D:\DuAnMau\polycafe\src\TB01211_NguyenLeDan\GUI_PolyCafe\obj\Debug\GUI_PolyCafe.ThongKeTheoNhanVien.resources

@@ -130,7 +130,17 @@ namespace GUI_PolyCafe
 
         private void doanhThuToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void loạiHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
             openChildForm(new frmThongKe());
+        }
+
+        private void nhânViênToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ThongKeTheoNhanVien());
         }
     }
 }
