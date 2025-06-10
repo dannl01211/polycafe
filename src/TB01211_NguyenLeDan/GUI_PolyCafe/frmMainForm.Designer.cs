@@ -92,18 +92,21 @@
             this.MenuStripThongTinTK.Name = "MenuStripThongTinTK";
             this.MenuStripThongTinTK.Size = new System.Drawing.Size(226, 26);
             this.MenuStripThongTinTK.Text = "Thông Tin Tài Khoản";
+            this.MenuStripThongTinTK.Click += new System.EventHandler(this.MenuStripThongTinTK_Click);
             // 
             // MenuStripDangXuat
             // 
             this.MenuStripDangXuat.Name = "MenuStripDangXuat";
             this.MenuStripDangXuat.Size = new System.Drawing.Size(226, 26);
             this.MenuStripDangXuat.Text = "Đăng Xuất";
+            this.MenuStripDangXuat.Click += new System.EventHandler(this.MenuStripDangXuat_Click);
             // 
             // MenuStripThoat
             // 
             this.MenuStripThoat.Name = "MenuStripThoat";
             this.MenuStripThoat.Size = new System.Drawing.Size(226, 26);
             this.MenuStripThoat.Text = "Thoát";
+            this.MenuStripThoat.Click += new System.EventHandler(this.MenuStripThoat_Click);
             // 
             // danhMucToolStripMenuItem
             // 

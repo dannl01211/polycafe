@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO_PolyCafe;
 using UTIL_PolyCafe;
 
 namespace GUI_PolyCafe
@@ -141,6 +142,41 @@ namespace GUI_PolyCafe
         private void nhânViênToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             openChildForm(new ThongKeTheoNhanVien());
+        }
+
+        private void MenuStripDangXuat_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn muốn đăng xuất khỏi tài khoản", "Đăng xuất",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+                );
+            if (result == DialogResult.No)
+            {
+                this.Close();
+                return;
+            }
+            frmLogin login = new frmLogin();
+            login.Show();
+
+        }
+
+        private void MenuStripThoat_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Bạn muốn thoát khỏi chương trình", "Thoát",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+                );
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void MenuStripThongTinTK_Click(object sender, EventArgs e)
+        {
+            NhanVien nv = AuthUtil.user;
+            frmThongTinTaiKhoan thongTinTaiKhoan = new frmThongTinTaiKhoan(nv);
+            openChildForm(thongTinTaiKhoan);
         }
     }
 }

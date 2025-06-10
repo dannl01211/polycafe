@@ -176,9 +176,9 @@
             this.cbMatKhauCu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMatKhauCu.Location = new System.Drawing.Point(969, 277);
             this.cbMatKhauCu.Name = "cbMatKhauCu";
-            this.cbMatKhauCu.Size = new System.Drawing.Size(113, 24);
+            this.cbMatKhauCu.Size = new System.Drawing.Size(89, 24);
             this.cbMatKhauCu.TabIndex = 13;
-            this.cbMatKhauCu.Text = "checkBox1";
+            this.cbMatKhauCu.Text = "Hiển thị";
             this.cbMatKhauCu.UseVisualStyleBackColor = false;
             this.cbMatKhauCu.CheckedChanged += new System.EventHandler(this.cbMatKhauCu_CheckedChanged);
             // 
@@ -189,9 +189,9 @@
             this.cbMatKhauMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMatKhauMoi.Location = new System.Drawing.Point(969, 347);
             this.cbMatKhauMoi.Name = "cbMatKhauMoi";
-            this.cbMatKhauMoi.Size = new System.Drawing.Size(113, 24);
+            this.cbMatKhauMoi.Size = new System.Drawing.Size(89, 24);
             this.cbMatKhauMoi.TabIndex = 14;
-            this.cbMatKhauMoi.Text = "checkBox2";
+            this.cbMatKhauMoi.Text = "Hiển thị";
             this.cbMatKhauMoi.UseVisualStyleBackColor = false;
             this.cbMatKhauMoi.CheckedChanged += new System.EventHandler(this.cbMatKhauMoi_CheckedChanged);
             // 
@@ -202,9 +202,9 @@
             this.cbXacNhanMK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbXacNhanMK.Location = new System.Drawing.Point(969, 420);
             this.cbXacNhanMK.Name = "cbXacNhanMK";
-            this.cbXacNhanMK.Size = new System.Drawing.Size(113, 24);
+            this.cbXacNhanMK.Size = new System.Drawing.Size(89, 24);
             this.cbXacNhanMK.TabIndex = 15;
-            this.cbXacNhanMK.Text = "checkBox3";
+            this.cbXacNhanMK.Text = "Hiển thị";
             this.cbXacNhanMK.UseVisualStyleBackColor = false;
             this.cbXacNhanMK.CheckedChanged += new System.EventHandler(this.cbXacNhanMK_CheckedChanged);
             // 

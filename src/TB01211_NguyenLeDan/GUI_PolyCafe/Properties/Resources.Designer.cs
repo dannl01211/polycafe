@@ -183,6 +183,16 @@ namespace GUI_PolyCafe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Brown_Beige_Cream_Modern_Illustration_Coffee_Project_Presentation7 {
+            get {
+                object obj = ResourceManager.GetObject("Brown Beige Cream Modern Illustration Coffee Project Presentation7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Brown_Beige_Modern_Coffee_Logo {
             get {
                 object obj = ResourceManager.GetObject("Brown Beige Modern Coffee Logo", resourceCulture);
@@ -213,9 +223,29 @@ namespace GUI_PolyCafe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Brown_Simple_Coffee_Shop_Facebook_Cover {
+            get {
+                object obj = ResourceManager.GetObject("Brown Simple Coffee Shop Facebook Cover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Brown_Simple_Coffee_Shop_Facebook_Cover__1_ {
             get {
                 object obj = ResourceManager.GetObject("Brown Simple Coffee Shop Facebook Cover (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Brown_Simple_Coffee_Shop_Facebook_Cover__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("Brown Simple Coffee Shop Facebook Cover (1)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
