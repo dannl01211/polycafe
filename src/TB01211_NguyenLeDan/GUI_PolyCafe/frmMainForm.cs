@@ -150,14 +150,16 @@ namespace GUI_PolyCafe
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question
                 );
-            if (result == DialogResult.No)
+            if (result == DialogResult.Yes)
             {
-                this.Close();
-                return;
-            }
-            frmLogin login = new frmLogin();
-            login.Show();
+                this.Hide();
 
+
+                frmLogin loginForm = new frmLogin();
+                loginForm.Show();
+
+                
+            } 
         }
 
         private void MenuStripThoat_Click(object sender, EventArgs e)

@@ -180,13 +180,13 @@ namespace GUI_PolyCafe
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Bạn muốn thoát khỏi chương trình", "Thoát",
+            DialogResult result = MessageBox.Show("Bạn muốn thoát khỏi cửa sổ", "Thoát",
                MessageBoxButtons.YesNo,
                MessageBoxIcon.Question
                );
             if (result == DialogResult.Yes)
             {
-                Application.Exit();
+                this.Close();
             }
         }
 
