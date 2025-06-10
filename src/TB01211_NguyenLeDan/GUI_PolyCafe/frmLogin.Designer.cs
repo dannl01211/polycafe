@@ -43,9 +43,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(431, 39);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label1.Location = new System.Drawing.Point(423, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(203, 36);
             this.label1.TabIndex = 0;
@@ -55,8 +56,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(455, 152);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(582, 94);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(137, 22);
             this.label2.TabIndex = 1;
@@ -65,8 +68,10 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(455, 220);
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label3.Location = new System.Drawing.Point(582, 170);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 22);
             this.label3.TabIndex = 2;
@@ -75,7 +80,7 @@
             // txtTenDN
             // 
             this.txtTenDN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenDN.Location = new System.Drawing.Point(624, 146);
+            this.txtTenDN.Location = new System.Drawing.Point(586, 119);
             this.txtTenDN.Name = "txtTenDN";
             this.txtTenDN.Size = new System.Drawing.Size(308, 28);
             this.txtTenDN.TabIndex = 3;
@@ -83,7 +88,7 @@
             // txtMatKhau
             // 
             this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatKhau.Location = new System.Drawing.Point(624, 214);
+            this.txtMatKhau.Location = new System.Drawing.Point(586, 195);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.PasswordChar = '*';
             this.txtMatKhau.Size = new System.Drawing.Size(308, 28);
@@ -95,7 +100,7 @@
             this.btnDangnhap.BackColor = System.Drawing.Color.LightCoral;
             this.btnDangnhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangnhap.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnDangnhap.Location = new System.Drawing.Point(519, 346);
+            this.btnDangnhap.Location = new System.Drawing.Point(586, 289);
             this.btnDangnhap.Name = "btnDangnhap";
             this.btnDangnhap.Size = new System.Drawing.Size(310, 75);
             this.btnDangnhap.TabIndex = 5;
@@ -107,7 +112,7 @@
             // 
             this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(519, 456);
+            this.btnThoat.Location = new System.Drawing.Point(586, 390);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(310, 71);
             this.btnThoat.TabIndex = 6;
@@ -118,25 +123,23 @@
             // cbHienThi
             // 
             this.cbHienThi.AutoSize = true;
+            this.cbHienThi.BackColor = System.Drawing.Color.Transparent;
             this.cbHienThi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbHienThi.Location = new System.Drawing.Point(624, 261);
+            this.cbHienThi.Location = new System.Drawing.Point(586, 229);
             this.cbHienThi.Name = "cbHienThi";
             this.cbHienThi.Size = new System.Drawing.Size(93, 26);
             this.cbHienThi.TabIndex = 7;
             this.cbHienThi.Text = "Hiển thị";
-            this.cbHienThi.UseVisualStyleBackColor = true;
+            this.cbHienThi.UseVisualStyleBackColor = false;
             this.cbHienThi.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::GUI_PolyCafe.Properties.Resources.cafe;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = global::GUI_PolyCafe.Properties.Resources.cafe;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 55);
+            this.pictureBox1.Image = global::GUI_PolyCafe.Properties.Resources.Brown_Coffee_Shop_Logo1;
+            this.pictureBox1.Location = new System.Drawing.Point(26, 65);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(383, 514);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.Size = new System.Drawing.Size(501, 504);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
@@ -144,7 +147,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::GUI_PolyCafe.Properties.Resources.Brown_Beige_Modern_Coffee_Logo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(996, 581);
             this.Controls.Add(this.pictureBox1);
@@ -157,6 +161,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.DoubleBuffered = true;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

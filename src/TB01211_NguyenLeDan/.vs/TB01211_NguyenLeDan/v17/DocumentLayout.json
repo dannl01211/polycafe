@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\DuAnMau\\polycafe\\src\\TB01211_NguyenLeDan\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D7027322-BA7F-4F9D-9228-016499739944}|GUI_PolyCafe\\GUI_PolyCafe.csproj|d:\\duanmau\\polycafe\\src\\tb01211_nguyenledan\\gui_polycafe\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D7027322-BA7F-4F9D-9228-016499739944}|GUI_PolyCafe\\GUI_PolyCafe.csproj|solutionrelative:gui_polycafe\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7027322-BA7F-4F9D-9228-016499739944}|GUI_PolyCafe\\GUI_PolyCafe.csproj|d:\\duanmau\\polycafe\\src\\tb01211_nguyenledan\\gui_polycafe\\frmformwelcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D7027322-BA7F-4F9D-9228-016499739944}|GUI_PolyCafe\\GUI_PolyCafe.csproj|solutionrelative:gui_polycafe\\frmformwelcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D7027322-BA7F-4F9D-9228-016499739944}|GUI_PolyCafe\\GUI_PolyCafe.csproj|d:\\duanmau\\polycafe\\src\\tb01211_nguyenledan\\gui_polycafe\\frmchitietphieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D7027322-BA7F-4F9D-9228-016499739944}|GUI_PolyCafe\\GUI_PolyCafe.csproj|solutionrelative:gui_polycafe\\frmchitietphieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +35,42 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmLogin.cs [Design]",
+              "DocumentMoniker": "D:\\DuAnMau\\polycafe\\src\\TB01211_NguyenLeDan\\GUI_PolyCafe\\frmLogin.cs",
+              "RelativeDocumentMoniker": "GUI_PolyCafe\\frmLogin.cs",
+              "ToolTip": "D:\\DuAnMau\\polycafe\\src\\TB01211_NguyenLeDan\\GUI_PolyCafe\\frmLogin.cs [Design]",
+              "RelativeToolTip": "GUI_PolyCafe\\frmLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T07:54:32.454Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmChiTietPhieu.cs [Design]",
+              "DocumentMoniker": "D:\\DuAnMau\\polycafe\\src\\TB01211_NguyenLeDan\\GUI_PolyCafe\\frmChiTietPhieu.cs",
+              "RelativeDocumentMoniker": "GUI_PolyCafe\\frmChiTietPhieu.cs",
+              "ToolTip": "D:\\DuAnMau\\polycafe\\src\\TB01211_NguyenLeDan\\GUI_PolyCafe\\frmChiTietPhieu.cs [Design]",
+              "RelativeToolTip": "GUI_PolyCafe\\frmChiTietPhieu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T07:42:29.685Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmFormWelcome.cs [Design]",
+              "DocumentMoniker": "D:\\DuAnMau\\polycafe\\src\\TB01211_NguyenLeDan\\GUI_PolyCafe\\frmFormWelcome.cs",
+              "RelativeDocumentMoniker": "GUI_PolyCafe\\frmFormWelcome.cs",
+              "ToolTip": "D:\\DuAnMau\\polycafe\\src\\TB01211_NguyenLeDan\\GUI_PolyCafe\\frmFormWelcome.cs [Design]",
+              "RelativeToolTip": "GUI_PolyCafe\\frmFormWelcome.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T07:29:20.048Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

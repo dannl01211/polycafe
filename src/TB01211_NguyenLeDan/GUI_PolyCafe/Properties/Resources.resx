@@ -118,46 +118,88 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="system" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\system.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="money-tag" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\money-tag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Brown Beige Cream Modern Illustration Coffee Project Presentation2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Brown Beige Cream Modern Illustration Coffee Project Presentation2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cafe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cafe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ảnh chờ" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ảnh chờ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ảnh chờ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ảnh chờ1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="system" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\system.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="he thong" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\he thong.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="add1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="group" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\group.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="add2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Brown Beige Cream Modern Illustration Coffee Project Presentation3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Brown Beige Cream Modern Illustration Coffee Project Presentation3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Nâu trắng Đen Đơn giản Sáng Tạo menu cà phê đồ uống lạnh đen đá latte cho Facebook Post (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Nâu trắng Đen Đơn giản Sáng Tạo menu cà phê đồ uống lạnh đen đá latte cho Facebook Post (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Brown Beige Cream Modern Illustration Coffee Project Presentation6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Brown Beige Cream Modern Illustration Coffee Project Presentation6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Nâu trắng Đen Đơn giản Sáng Tạo menu cà phê đồ uống lạnh đen đá latte cho Facebook Post (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Nâu trắng Đen Đơn giản Sáng Tạo menu cà phê đồ uống lạnh đen đá latte cho Facebook Post (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Brown Beige Cream Modern Illustration Coffee Project Presentation5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Brown Beige Cream Modern Illustration Coffee Project Presentation5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Nâu trắng Đen Đơn giản Sáng Tạo menu cà phê đồ uống lạnh đen đá latte cho Facebook Post" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Nâu trắng Đen Đơn giản Sáng Tạo menu cà phê đồ uống lạnh đen đá latte cho Facebook Post.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="group" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\group.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Brown Coffee Shop Logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Brown Coffee Shop Logo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="money-tag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\money-tag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Brown Beige Cream Modern Illustration Coffee Project Presentation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Brown Beige Cream Modern Illustration Coffee Project Presentation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="manual-book" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\manual-book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Brown Coffee Shop Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Brown Coffee Shop Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="he thong" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\he thong.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Brown Beige Cream Modern Illustration Coffee Project Presentation4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Brown Beige Cream Modern Illustration Coffee Project Presentation4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ảnh chờ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ảnh chờ1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ảnh chờ" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ảnh chờ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Brown Simple Coffee Shop Facebook Cover (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Brown Simple Coffee Shop Facebook Cover (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Brown Beige Cream Modern Illustration Coffee Project Presentation1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Brown Beige Cream Modern Illustration Coffee Project Presentation1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Brown Beige Modern Coffee Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Brown Beige Modern Coffee Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

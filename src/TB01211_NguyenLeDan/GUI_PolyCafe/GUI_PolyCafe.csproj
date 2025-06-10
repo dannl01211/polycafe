@@ -352,6 +352,48 @@
   <ItemGroup>
     <None Include="Resources\manual-book.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nâu trắng Đen Đơn giản Sáng Tạo menu cà phê đồ uống lạnh đen đá latte cho Facebook Post.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nâu trắng Đen Đơn giản Sáng Tạo menu cà phê đồ uống lạnh đen đá latte cho Facebook Post %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nâu trắng Đen Đơn giản Sáng Tạo menu cà phê đồ uống lạnh đen đá latte cho Facebook Post %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brown Beige Cream Modern Illustration Coffee Project Presentation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brown Beige Cream Modern Illustration Coffee Project Presentation1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brown Beige Cream Modern Illustration Coffee Project Presentation2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brown Beige Cream Modern Illustration Coffee Project Presentation3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brown Beige Cream Modern Illustration Coffee Project Presentation4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brown Beige Cream Modern Illustration Coffee Project Presentation5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brown Beige Cream Modern Illustration Coffee Project Presentation6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brown Simple Coffee Shop Facebook Cover %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brown Coffee Shop Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brown Coffee Shop Logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Brown Beige Modern Coffee Logo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.6.0.2\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -61,7 +61,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(585, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(168, 32);
@@ -154,6 +156,7 @@
             // 
             // gbThongTinSP
             // 
+            this.gbThongTinSP.BackColor = System.Drawing.Color.Transparent;
             this.gbThongTinSP.Controls.Add(this.cboMaLoai);
             this.gbThongTinSP.Controls.Add(this.chbNgungBan);
             this.gbThongTinSP.Controls.Add(this.chbHoatDong);
@@ -289,6 +292,7 @@
             // 
             // gbTacvu
             // 
+            this.gbTacvu.BackColor = System.Drawing.Color.Transparent;
             this.gbTacvu.Controls.Add(this.btnLammoi);
             this.gbTacvu.Controls.Add(this.btnThoat);
             this.gbTacvu.Controls.Add(this.btnXoa);
@@ -316,6 +320,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::GUI_PolyCafe.Properties.Resources.Brown_Beige_Cream_Modern_Illustration_Coffee_Project_Presentation6;
             this.ClientSize = new System.Drawing.Size(1319, 695);
             this.Controls.Add(this.gbTacvu);
             this.Controls.Add(this.gbThongTinSP);

@@ -100,7 +100,7 @@ namespace GUI_PolyCafe
 
         private void pnMain_Paint(object sender, PaintEventArgs e)
         {
-
+            
         }
 
         private void thẻLưuĐộngToolStripMenuItem_Click(object sender, EventArgs e)

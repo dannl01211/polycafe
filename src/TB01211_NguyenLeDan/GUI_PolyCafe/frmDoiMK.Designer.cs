@@ -49,6 +49,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
             this.label1.Location = new System.Drawing.Point(569, 27);
@@ -60,6 +61,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(310, 113);
             this.label2.Name = "label2";
@@ -70,6 +72,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(303, 194);
             this.label3.Name = "label3";
@@ -80,6 +83,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(321, 274);
             this.label4.Name = "label4";
@@ -90,6 +94,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(311, 344);
             this.label5.Name = "label5";
@@ -147,6 +152,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(259, 417);
             this.label6.Name = "label6";
@@ -166,37 +172,40 @@
             // cbMatKhauCu
             // 
             this.cbMatKhauCu.AutoSize = true;
+            this.cbMatKhauCu.BackColor = System.Drawing.Color.Transparent;
             this.cbMatKhauCu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMatKhauCu.Location = new System.Drawing.Point(969, 277);
             this.cbMatKhauCu.Name = "cbMatKhauCu";
             this.cbMatKhauCu.Size = new System.Drawing.Size(113, 24);
             this.cbMatKhauCu.TabIndex = 13;
             this.cbMatKhauCu.Text = "checkBox1";
-            this.cbMatKhauCu.UseVisualStyleBackColor = true;
+            this.cbMatKhauCu.UseVisualStyleBackColor = false;
             this.cbMatKhauCu.CheckedChanged += new System.EventHandler(this.cbMatKhauCu_CheckedChanged);
             // 
             // cbMatKhauMoi
             // 
             this.cbMatKhauMoi.AutoSize = true;
+            this.cbMatKhauMoi.BackColor = System.Drawing.Color.Transparent;
             this.cbMatKhauMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMatKhauMoi.Location = new System.Drawing.Point(969, 347);
             this.cbMatKhauMoi.Name = "cbMatKhauMoi";
             this.cbMatKhauMoi.Size = new System.Drawing.Size(113, 24);
             this.cbMatKhauMoi.TabIndex = 14;
             this.cbMatKhauMoi.Text = "checkBox2";
-            this.cbMatKhauMoi.UseVisualStyleBackColor = true;
+            this.cbMatKhauMoi.UseVisualStyleBackColor = false;
             this.cbMatKhauMoi.CheckedChanged += new System.EventHandler(this.cbMatKhauMoi_CheckedChanged);
             // 
             // cbXacNhanMK
             // 
             this.cbXacNhanMK.AutoSize = true;
+            this.cbXacNhanMK.BackColor = System.Drawing.Color.Transparent;
             this.cbXacNhanMK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbXacNhanMK.Location = new System.Drawing.Point(969, 420);
             this.cbXacNhanMK.Name = "cbXacNhanMK";
             this.cbXacNhanMK.Size = new System.Drawing.Size(113, 24);
             this.cbXacNhanMK.TabIndex = 15;
             this.cbXacNhanMK.Text = "checkBox3";
-            this.cbXacNhanMK.UseVisualStyleBackColor = true;
+            this.cbXacNhanMK.UseVisualStyleBackColor = false;
             this.cbXacNhanMK.CheckedChanged += new System.EventHandler(this.cbXacNhanMK_CheckedChanged);
             // 
             // btnThoat
@@ -216,6 +225,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::GUI_PolyCafe.Properties.Resources.Brown_Beige_Cream_Modern_Illustration_Coffee_Project_Presentation1;
             this.ClientSize = new System.Drawing.Size(1319, 695);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.cbXacNhanMK);

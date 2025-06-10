@@ -63,8 +63,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(578, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(174, 32);
@@ -75,6 +76,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(748, 85);
             this.label2.Name = "label2";
@@ -85,6 +87,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(783, 154);
             this.label3.Name = "label3";
@@ -95,6 +98,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(818, 223);
             this.label4.Name = "label4";
@@ -105,6 +109,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(785, 284);
             this.label5.Name = "label5";
@@ -115,6 +120,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(697, 350);
             this.label6.Name = "label6";
@@ -293,6 +299,7 @@
             // 
             // pnTrangThai
             // 
+            this.pnTrangThai.BackColor = System.Drawing.Color.Transparent;
             this.pnTrangThai.Controls.Add(this.rdoTamNgung);
             this.pnTrangThai.Controls.Add(this.label8);
             this.pnTrangThai.Controls.Add(this.rdoHoatDong);
@@ -303,6 +310,7 @@
             // 
             // pnVaiTro
             // 
+            this.pnVaiTro.BackColor = System.Drawing.Color.Transparent;
             this.pnVaiTro.Controls.Add(this.rdoQuanLy);
             this.pnVaiTro.Controls.Add(this.label7);
             this.pnVaiTro.Controls.Add(this.rdoNhanVien);
@@ -313,7 +321,7 @@
             // 
             // btnLammoi
             // 
-            this.btnLammoi.BackColor = System.Drawing.Color.White;
+            this.btnLammoi.BackColor = System.Drawing.Color.Transparent;
             this.btnLammoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLammoi.Location = new System.Drawing.Point(717, 548);
             this.btnLammoi.Name = "btnLammoi";
@@ -354,6 +362,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::GUI_PolyCafe.Properties.Resources.Brown_Beige_Cream_Modern_Illustration_Coffee_Project_Presentation3;
             this.ClientSize = new System.Drawing.Size(1319, 695);
             this.Controls.Add(this.btnLammoi);
             this.Controls.Add(this.pnVaiTro);

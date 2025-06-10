@@ -28,18 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // progressBar
+            // 
+            this.progressBar.Location = new System.Drawing.Point(5, 591);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(968, 33);
+            this.progressBar.TabIndex = 1;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.BackgroundImage = global::GUI_PolyCafe.Properties.Resources.Brown_Simple_Coffee_Shop_Facebook_Cover__1_;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox1.Image = global::GUI_PolyCafe.Properties.Resources.ảnh_chờ1;
-            this.pictureBox1.Location = new System.Drawing.Point(-5, -4);
+            this.pictureBox1.Location = new System.Drawing.Point(5, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(968, 581);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -47,19 +54,12 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // progressBar
-            // 
-            this.progressBar.Location = new System.Drawing.Point(8, 564);
-            this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(946, 23);
-            this.progressBar.TabIndex = 1;
-            // 
             // FormWelcomeFRM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(966, 586);
+            this.ClientSize = new System.Drawing.Size(976, 628);
             this.Controls.Add(this.progressBar);
             this.Controls.Add(this.pictureBox1);
             this.Cursor = System.Windows.Forms.Cursors.IBeam;

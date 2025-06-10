@@ -113,6 +113,116 @@ namespace GUI_PolyCafe.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Brown_Beige_Cream_Modern_Illustration_Coffee_Project_Presentation {
+            get {
+                object obj = ResourceManager.GetObject("Brown Beige Cream Modern Illustration Coffee Project Presentation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Brown_Beige_Cream_Modern_Illustration_Coffee_Project_Presentation1 {
+            get {
+                object obj = ResourceManager.GetObject("Brown Beige Cream Modern Illustration Coffee Project Presentation1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Brown_Beige_Cream_Modern_Illustration_Coffee_Project_Presentation2 {
+            get {
+                object obj = ResourceManager.GetObject("Brown Beige Cream Modern Illustration Coffee Project Presentation2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Brown_Beige_Cream_Modern_Illustration_Coffee_Project_Presentation3 {
+            get {
+                object obj = ResourceManager.GetObject("Brown Beige Cream Modern Illustration Coffee Project Presentation3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Brown_Beige_Cream_Modern_Illustration_Coffee_Project_Presentation4 {
+            get {
+                object obj = ResourceManager.GetObject("Brown Beige Cream Modern Illustration Coffee Project Presentation4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Brown_Beige_Cream_Modern_Illustration_Coffee_Project_Presentation5 {
+            get {
+                object obj = ResourceManager.GetObject("Brown Beige Cream Modern Illustration Coffee Project Presentation5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Brown_Beige_Cream_Modern_Illustration_Coffee_Project_Presentation6 {
+            get {
+                object obj = ResourceManager.GetObject("Brown Beige Cream Modern Illustration Coffee Project Presentation6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Brown_Beige_Modern_Coffee_Logo {
+            get {
+                object obj = ResourceManager.GetObject("Brown Beige Modern Coffee Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Brown_Coffee_Shop_Logo {
+            get {
+                object obj = ResourceManager.GetObject("Brown Coffee Shop Logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Brown_Coffee_Shop_Logo1 {
+            get {
+                object obj = ResourceManager.GetObject("Brown Coffee Shop Logo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Brown_Simple_Coffee_Shop_Facebook_Cover__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Brown Simple Coffee Shop Facebook Cover (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cafe {
             get {
                 object obj = ResourceManager.GetObject("cafe", resourceCulture);
@@ -176,6 +286,39 @@ namespace GUI_PolyCafe.Properties {
         internal static System.Drawing.Bitmap money_tag {
             get {
                 object obj = ResourceManager.GetObject("money-tag", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Nâu_trắng_Đen_Đơn_giản_Sáng_Tạo_menu_cà_phê_đồ_uống_lạnh_đen_đá_latte_cho_Facebook_Post {
+            get {
+                object obj = ResourceManager.GetObject("Nâu trắng Đen Đơn giản Sáng Tạo menu cà phê đồ uống lạnh đen đá latte cho Faceboo" +
+                        "k Post", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Nâu_trắng_Đen_Đơn_giản_Sáng_Tạo_menu_cà_phê_đồ_uống_lạnh_đen_đá_latte_cho_Facebook_Post__1_ {
+            get {
+                object obj = ResourceManager.GetObject("Nâu trắng Đen Đơn giản Sáng Tạo menu cà phê đồ uống lạnh đen đá latte cho Faceboo" +
+                        "k Post (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Nâu_trắng_Đen_Đơn_giản_Sáng_Tạo_menu_cà_phê_đồ_uống_lạnh_đen_đá_latte_cho_Facebook_Post__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("Nâu trắng Đen Đơn giản Sáng Tạo menu cà phê đồ uống lạnh đen đá latte cho Faceboo" +
+                        "k Post (1)1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

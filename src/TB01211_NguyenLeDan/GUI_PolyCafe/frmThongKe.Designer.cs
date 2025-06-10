@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.lblSanPham = new System.Windows.Forms.Label();
             this.lblNhanVien = new System.Windows.Forms.Label();
             this.lblDoanhThu = new System.Windows.Forms.Label();
@@ -46,6 +46,8 @@
             // lblSanPham
             // 
             this.lblSanPham.AutoSize = true;
+            this.lblSanPham.BackColor = System.Drawing.Color.Transparent;
+            this.lblSanPham.ForeColor = System.Drawing.Color.Black;
             this.lblSanPham.Location = new System.Drawing.Point(101, 69);
             this.lblSanPham.Name = "lblSanPham";
             this.lblSanPham.Size = new System.Drawing.Size(95, 16);
@@ -56,6 +58,7 @@
             // lblNhanVien
             // 
             this.lblNhanVien.AutoSize = true;
+            this.lblNhanVien.BackColor = System.Drawing.Color.Transparent;
             this.lblNhanVien.Location = new System.Drawing.Point(508, 69);
             this.lblNhanVien.Name = "lblNhanVien";
             this.lblNhanVien.Size = new System.Drawing.Size(56, 16);
@@ -65,6 +68,7 @@
             // lblDoanhThu
             // 
             this.lblDoanhThu.AutoSize = true;
+            this.lblDoanhThu.BackColor = System.Drawing.Color.Transparent;
             this.lblDoanhThu.Location = new System.Drawing.Point(848, 69);
             this.lblDoanhThu.Name = "lblDoanhThu";
             this.lblDoanhThu.Size = new System.Drawing.Size(64, 16);
@@ -74,7 +78,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(547, 19);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(160, 32);
@@ -83,17 +89,17 @@
             // 
             // chartDoanhThu
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartDoanhThu.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chartDoanhThu.Legends.Add(legend2);
-            this.chartDoanhThu.Location = new System.Drawing.Point(104, 204);
+            chartArea1.Name = "ChartArea1";
+            this.chartDoanhThu.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartDoanhThu.Legends.Add(legend1);
+            this.chartDoanhThu.Location = new System.Drawing.Point(42, 185);
             this.chartDoanhThu.Name = "chartDoanhThu";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chartDoanhThu.Series.Add(series2);
-            this.chartDoanhThu.Size = new System.Drawing.Size(1033, 300);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartDoanhThu.Series.Add(series1);
+            this.chartDoanhThu.Size = new System.Drawing.Size(1232, 460);
             this.chartDoanhThu.TabIndex = 5;
             this.chartDoanhThu.Text = "chart1";
             // 
@@ -133,6 +139,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::GUI_PolyCafe.Properties.Resources.Brown_Beige_Cream_Modern_Illustration_Coffee_Project_Presentation4;
             this.ClientSize = new System.Drawing.Size(1319, 695);
             this.Controls.Add(this.btnThongKe);
             this.Controls.Add(this.dtpDenNgay);
