@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -44,7 +45,14 @@ namespace GUI_PolyCafe
             BUSSanPham bUSSanPham = new BUSSanPham();
             dgvDSSP.DataSource = null;
             dgvDSSP.DataSource = bUSSanPham.GetSanPhamList();
-            
+            dgvDSSP.Columns["MaSanPham"].HeaderText = "Mã Sản Phẩm";
+            dgvDSSP.Columns["TenSanPham"].HeaderText = "Tên Sản Phẩm";
+            dgvDSSP.Columns["DonGia"].HeaderText = "Đơn Giá";
+            dgvDSSP.Columns["MaLoai"].HeaderText = "Mã Loại";
+            dgvDSSP.Columns["TrangThaiText"].HeaderText = "Trạng Thái";
+            dgvDSSP.Columns["TrangThai"].Visible = false; // Ẩn cột Trạng Thái
+            dgvDSSP.Columns["HinhAnh"].HeaderText = "Hình Ảnh";
+
         }
         private void ClearForm()
         {
@@ -203,6 +211,9 @@ namespace GUI_PolyCafe
             txtMaSP.Text = row.Cells["MaSanPham"].Value.ToString();
             txtTenSP.Text = row.Cells["TenSanPham"].Value.ToString();
             txtDonGia.Text = row.Cells["DonGia"].Value.ToString();
+            string path = Path.Combine(Application.StartupPath, row.Cells["HinhAnh"].Value.ToString());
+            picSanPham.Image = ImageUtil.LoadImage(path);
+            picSanPham.Tag = path;
             bool trangThai = Convert.ToBoolean(row.Cells["TrangThai"].Value);
             cboMaLoai.SelectedValue = row.Cells["MaLoai"].Value.ToString();
             if (trangThai)
@@ -227,6 +238,40 @@ namespace GUI_PolyCafe
             {
                 picSanPham.Image = Image.FromFile(openFileDialog.FileName);
             }
+        }
+
+        private void SearchInAllCells(string keyword)
+        {
+            foreach (DataGridViewRow row in dgvDSSP.Rows)
+            {
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.Value != null && cell.Value.ToString().ToLower().Contains(keyword.ToLower()))
+                    {
+
+                        row.Selected = true;
+                        break;
+                    }
+                    else
+                    {
+                        row.Selected = false;
+                    }
+                }
+            }
+        }
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            string keyword = txtTim.Text.Trim();
+            if (!string.IsNullOrWhiteSpace(keyword))
+            {
+                SearchInAllCells(keyword);
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập từ khóa tìm kiếm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            txtTim.Clear();
         }
     }
 }

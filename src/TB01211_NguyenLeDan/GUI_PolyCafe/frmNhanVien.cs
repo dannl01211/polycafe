@@ -35,7 +35,15 @@ namespace GUI_PolyCafe
             BUSNhanVien bUSNhanVien = new BUSNhanVien();
             dgvDSNV.DataSource = null;
             dgvDSNV.DataSource = bUSNhanVien.GetNhanVienList();
-            
+            dgvDSNV.Columns["MaNhanVien"].HeaderText = "Mã Nhân Viên";
+            dgvDSNV.Columns["HoTen"].HeaderText = "Họ Tên";
+            dgvDSNV.Columns["MatKhau"].HeaderText = "Mật Khẩu";
+            dgvDSNV.Columns["Email"].HeaderText = "Email";
+            dgvDSNV.Columns["VaiTroText"].HeaderText = "Vai Trò";
+            dgvDSNV.Columns["TrangThaiText"].HeaderText = "Trạng Thái";
+            dgvDSNV.Columns["VaiTro"].Visible = false; // Ẩn cột Vai Trò
+            dgvDSNV.Columns["TrangThai"].Visible = false; // Ẩn cột Trạng Thái
+
         }
         private void ClearForm() 
         {
@@ -240,6 +248,39 @@ namespace GUI_PolyCafe
             {
                 MessageBox.Show("Lỗi: " + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void SearchInAllCells(string keyword)
+        {
+            foreach (DataGridViewRow row in dgvDSNV.Rows)
+            {
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.Value != null && cell.Value.ToString().ToLower().Contains(keyword.ToLower()))
+                    {
+
+                        row.Selected = true;
+                        break;
+                    }
+                    else
+                    {
+                        row.Selected = false;
+                    }
+                }
+            }
+        }
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            string keyword = txtTim.Text.Trim().ToLower();
+            if (!string.IsNullOrWhiteSpace(keyword))
+            {
+                SearchInAllCells(keyword);
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập từ khóa tìm kiếm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            txtTim.Clear();
         }
     }
 }

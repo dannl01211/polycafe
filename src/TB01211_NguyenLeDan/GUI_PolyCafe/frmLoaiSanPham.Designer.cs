@@ -43,12 +43,10 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.txtTim = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
             this.txtGhiChu = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSLoaiSP)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtTenLoai
@@ -72,6 +70,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(93, 263);
@@ -83,6 +82,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(97, 189);
@@ -94,6 +94,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(97, 115);
@@ -123,6 +124,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.btnTim);
             this.groupBox1.Controls.Add(this.btnLamMoi);
             this.groupBox1.Controls.Add(this.btnThoat);
@@ -147,6 +149,7 @@
             this.btnTim.TabIndex = 36;
             this.btnTim.Text = "Tìm";
             this.btnTim.UseVisualStyleBackColor = true;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // btnLamMoi
             // 
@@ -211,25 +214,6 @@
             this.txtTim.Size = new System.Drawing.Size(200, 27);
             this.txtTim.TabIndex = 30;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Location = new System.Drawing.Point(-10, 7);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1320, 54);
-            this.panel1.TabIndex = 39;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(0, -20);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(1347, 91);
-            this.button6.TabIndex = 40;
-            this.button6.Text = "LOẠI SẢN PHẨM";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
             // txtGhiChu
             // 
             this.txtGhiChu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -239,13 +223,26 @@
             this.txtGhiChu.Size = new System.Drawing.Size(250, 83);
             this.txtGhiChu.TabIndex = 40;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label1.Location = new System.Drawing.Point(547, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(244, 32);
+            this.label1.TabIndex = 41;
+            this.label1.Text = "LOẠI SẢN PHẨM";
+            // 
             // frmLoaiSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::GUI_PolyCafe.Properties.Resources.Brown_Beige_Cream_Modern_Illustration_Coffee_Project_Presentation9;
             this.ClientSize = new System.Drawing.Size(1319, 695);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtGhiChu);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvDSLoaiSP);
             this.Controls.Add(this.txtTenLoai);
@@ -260,7 +257,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSLoaiSP)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -281,8 +277,7 @@
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.TextBox txtTim;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.TextBox txtGhiChu;
+        private System.Windows.Forms.Label label1;
     }
 }

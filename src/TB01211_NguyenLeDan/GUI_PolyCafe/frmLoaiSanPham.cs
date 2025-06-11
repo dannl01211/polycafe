@@ -32,7 +32,11 @@ namespace GUI_PolyCafe
             BUSLoaiSanPham busLoaiSanPham = new BUSLoaiSanPham();
             dgvDSLoaiSP.DataSource = null;
             dgvDSLoaiSP.DataSource = busLoaiSanPham.GetLoaiSanPhamList();
-            
+            dgvDSLoaiSP.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvDSLoaiSP.Columns["MaLoai"].HeaderText = "Mã Loại";
+            dgvDSLoaiSP.Columns["TenLoai"].HeaderText = "Tên Loại";
+            dgvDSLoaiSP.Columns["GhiChu"].HeaderText = "Ghi Chú";
+
         }
         private void ClearForm() 
         {
@@ -158,6 +162,39 @@ namespace GUI_PolyCafe
             {
                 MessageBox.Show("Lỗi khi xóa loại sản phẩm: " + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void SearchInAllCells(string keyword)
+        {
+            foreach (DataGridViewRow row in dgvDSLoaiSP.Rows)
+            {
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.Value != null && cell.Value.ToString().ToLower().Contains(keyword.ToLower()))
+                    {
+
+                        row.Selected = true;
+                        break;
+                    }
+                    else
+                    {
+                        row.Selected = false;
+                    }
+                }
+            }
+        }
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            string keyword = txtTim.Text.Trim();
+            if (!string.IsNullOrWhiteSpace(keyword))
+            {
+                SearchInAllCells(keyword);
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập từ khóa tìm kiếm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            txtTim.Clear();
         }
     }
 }

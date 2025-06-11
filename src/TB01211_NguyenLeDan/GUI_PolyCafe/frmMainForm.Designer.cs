@@ -205,12 +205,14 @@
             this.hướngDẫnSửDụngToolStripMenuItem.Name = "hướngDẫnSửDụngToolStripMenuItem";
             this.hướngDẫnSửDụngToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
             this.hướngDẫnSửDụngToolStripMenuItem.Text = "Hướng dẫn sử dụng";
+            this.hướngDẫnSửDụngToolStripMenuItem.Click += new System.EventHandler(this.hướngDẫnSửDụngToolStripMenuItem_Click);
             // 
             // giớiThiệuPhầnMềmToolStripMenuItem
             // 
             this.giớiThiệuPhầnMềmToolStripMenuItem.Name = "giớiThiệuPhầnMềmToolStripMenuItem";
             this.giớiThiệuPhầnMềmToolStripMenuItem.Size = new System.Drawing.Size(231, 26);
             this.giớiThiệuPhầnMềmToolStripMenuItem.Text = "Giới thiệu phần mềm";
+            this.giớiThiệuPhầnMềmToolStripMenuItem.Click += new System.EventHandler(this.giớiThiệuPhầnMềmToolStripMenuItem_Click);
             // 
             // pnMain
             // 

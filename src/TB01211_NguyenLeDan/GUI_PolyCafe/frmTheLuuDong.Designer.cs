@@ -67,6 +67,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(86, 156);
             this.label6.Name = "label6";
@@ -77,6 +78,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(127, 91);
             this.label5.Name = "label5";
@@ -165,6 +167,7 @@
             this.btnTim.TabIndex = 40;
             this.btnTim.Text = "Tìm";
             this.btnTim.UseVisualStyleBackColor = false;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // txtTim
             // 
@@ -178,8 +181,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(566, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(224, 32);
@@ -190,6 +194,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(99, 220);
             this.label8.Name = "label8";
@@ -200,18 +205,20 @@
             // cbHoatDong
             // 
             this.cbHoatDong.AutoSize = true;
+            this.cbHoatDong.BackColor = System.Drawing.Color.Transparent;
             this.cbHoatDong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbHoatDong.Location = new System.Drawing.Point(250, 216);
             this.cbHoatDong.Name = "cbHoatDong";
             this.cbHoatDong.Size = new System.Drawing.Size(124, 29);
             this.cbHoatDong.TabIndex = 22;
             this.cbHoatDong.Text = "Hoạt động";
-            this.cbHoatDong.UseVisualStyleBackColor = true;
+            this.cbHoatDong.UseVisualStyleBackColor = false;
             // 
             // frmTheLuuDong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::GUI_PolyCafe.Properties.Resources.Brown_Beige_Cream_Modern_Illustration_Coffee_Project_Presentation10;
             this.ClientSize = new System.Drawing.Size(1319, 695);
             this.Controls.Add(this.cbHoatDong);
             this.Controls.Add(this.dgvDSTheLuuDong);

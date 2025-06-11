@@ -18,7 +18,10 @@ namespace GUI_PolyCafe
         {
             InitializeComponent();
             CheckPermisson();
-            
+            this.hướngDẫnSửDụngToolStripMenuItem.Click += new System.EventHandler(this.hướngDẫnSửDụngToolStripMenuItem_Click);
+            this.giớiThiệuPhầnMềmToolStripMenuItem.Click += new System.EventHandler(this.giớiThiệuPhầnMềmToolStripMenuItem_Click);
+
+
         }
 
         private void heejToolStripMenuItem_Click(object sender, EventArgs e)
@@ -180,5 +183,34 @@ namespace GUI_PolyCafe
             frmThongTinTaiKhoan thongTinTaiKhoan = new frmThongTinTaiKhoan(nv);
             openChildForm(thongTinTaiKhoan);
         }
+
+        private void hướngDẫnSửDụngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+        "Hướng dẫn sử dụng:\n\n" +
+        "1. Đăng nhập để sử dụng các chức năng chính.\n" +
+        "2. Quản lý sản phẩm, loại sản phẩm, bán hàng và xem thống kê.\n" +
+        "3. Sử dụng menu trên cùng để truy cập các chức năng.\n" +
+        "4. Để biết thêm chi tiết, vui lòng liên hệ bộ phận hỗ trợ.",
+        "Hướng dẫn sử dụng",
+        MessageBoxButtons.OK,
+        MessageBoxIcon.Information
+        );
+        }
+
+        private void giớiThiệuPhầnMềmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+        "Giới thiệu phần mềm:\n\n" +
+        "PolyCafe là phần mềm quản lý quán cafe, hỗ trợ quản lý sản phẩm, bán hàng, nhân viên và thống kê doanh thu.\n" +
+        "Phát triển bởi thần đồng Nguyễn Lê Đan.\n" +
+        "Phiên bản: 1.0.0\n" +
+        "Mọi chi tiết xin liên hệ: dan@polycafe.vn",
+        "Giới thiệu phần mềm",
+        MessageBoxButtons.OK,
+        MessageBoxIcon.Information);
+        }
+
+
     }
 }

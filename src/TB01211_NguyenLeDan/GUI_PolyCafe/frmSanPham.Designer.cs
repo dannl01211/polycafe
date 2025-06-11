@@ -41,7 +41,6 @@
             this.cboMaLoai = new System.Windows.Forms.ComboBox();
             this.chbNgungBan = new System.Windows.Forms.CheckBox();
             this.chbHoatDong = new System.Windows.Forms.CheckBox();
-            this.picSanPham = new System.Windows.Forms.PictureBox();
             this.txtDonGia = new System.Windows.Forms.TextBox();
             this.txtTenSP = new System.Windows.Forms.TextBox();
             this.txtMaSP = new System.Windows.Forms.TextBox();
@@ -52,10 +51,11 @@
             this.label11 = new System.Windows.Forms.Label();
             this.gbTacvu = new System.Windows.Forms.GroupBox();
             this.btnThem = new System.Windows.Forms.Button();
+            this.picSanPham = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSSP)).BeginInit();
             this.gbThongTinSP.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picSanPham)).BeginInit();
             this.gbTacvu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picSanPham)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -125,7 +125,7 @@
             // btnChonAnh
             // 
             this.btnChonAnh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChonAnh.Location = new System.Drawing.Point(533, 292);
+            this.btnChonAnh.Location = new System.Drawing.Point(533, 288);
             this.btnChonAnh.Name = "btnChonAnh";
             this.btnChonAnh.Size = new System.Drawing.Size(123, 37);
             this.btnChonAnh.TabIndex = 20;
@@ -142,6 +142,7 @@
             this.btnTim.TabIndex = 22;
             this.btnTim.Text = "Tìm";
             this.btnTim.UseVisualStyleBackColor = true;
+            this.btnTim.Click += new System.EventHandler(this.btnTim_Click);
             // 
             // dgvDSSP
             // 
@@ -157,11 +158,11 @@
             // gbThongTinSP
             // 
             this.gbThongTinSP.BackColor = System.Drawing.Color.Transparent;
+            this.gbThongTinSP.Controls.Add(this.picSanPham);
             this.gbThongTinSP.Controls.Add(this.cboMaLoai);
             this.gbThongTinSP.Controls.Add(this.chbNgungBan);
             this.gbThongTinSP.Controls.Add(this.chbHoatDong);
             this.gbThongTinSP.Controls.Add(this.btnChonAnh);
-            this.gbThongTinSP.Controls.Add(this.picSanPham);
             this.gbThongTinSP.Controls.Add(this.txtDonGia);
             this.gbThongTinSP.Controls.Add(this.txtTenSP);
             this.gbThongTinSP.Controls.Add(this.txtMaSP);
@@ -207,14 +208,6 @@
             this.chbHoatDong.TabIndex = 24;
             this.chbHoatDong.Text = "Hoạt động";
             this.chbHoatDong.UseVisualStyleBackColor = true;
-            // 
-            // picSanPham
-            // 
-            this.picSanPham.Location = new System.Drawing.Point(478, 36);
-            this.picSanPham.Name = "picSanPham";
-            this.picSanPham.Size = new System.Drawing.Size(229, 221);
-            this.picSanPham.TabIndex = 21;
-            this.picSanPham.TabStop = false;
             // 
             // txtDonGia
             // 
@@ -316,6 +309,15 @@
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
+            // picSanPham
+            // 
+            this.picSanPham.Location = new System.Drawing.Point(475, 39);
+            this.picSanPham.Name = "picSanPham";
+            this.picSanPham.Size = new System.Drawing.Size(237, 226);
+            this.picSanPham.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picSanPham.TabIndex = 27;
+            this.picSanPham.TabStop = false;
+            // 
             // frmSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -334,8 +336,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSSP)).EndInit();
             this.gbThongTinSP.ResumeLayout(false);
             this.gbThongTinSP.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picSanPham)).EndInit();
             this.gbTacvu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picSanPham)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -351,7 +353,6 @@
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnLammoi;
         private System.Windows.Forms.Button btnChonAnh;
-        private System.Windows.Forms.PictureBox picSanPham;
         private System.Windows.Forms.Button btnTim;
         private System.Windows.Forms.DataGridView dgvDSSP;
         private System.Windows.Forms.GroupBox gbThongTinSP;
@@ -367,5 +368,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox gbTacvu;
         private System.Windows.Forms.ComboBox cboMaLoai;
+        private System.Windows.Forms.PictureBox picSanPham;
     }
 }

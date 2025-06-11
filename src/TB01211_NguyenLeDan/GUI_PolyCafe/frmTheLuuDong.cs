@@ -38,6 +38,10 @@ namespace GUI_PolyCafe
             dgvDSTheLuuDong.DataSource = null;
             dgvDSTheLuuDong.DataSource = bUSTheLuuDong.GetTheLuuDongList();
             dgvDSTheLuuDong.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvDSTheLuuDong.Columns["MaThe"].HeaderText = "Mã Thẻ";
+            dgvDSTheLuuDong.Columns["ChuSoHuu"].HeaderText = "Chủ Sở Hữu";
+            dgvDSTheLuuDong.Columns["TrangThaiText"].HeaderText = "Trạng Thái";
+            dgvDSTheLuuDong.Columns["TrangThai"].Visible = false; // Ẩn cột Trạng Thái
         }
 
         private void ClearForm()
@@ -161,6 +165,40 @@ namespace GUI_PolyCafe
             {
                 this.Close();
             }
+        }
+
+        private void SearchInAllCells(string keyword)
+        {
+            foreach (DataGridViewRow row in dgvDSTheLuuDong.Rows)
+            {
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.Value != null && cell.Value.ToString().ToLower().Contains(keyword.ToLower()))
+                    {
+
+                        row.Selected = true;
+                        break;
+                    }
+                    else
+                    {
+                        row.Selected = false;
+                    }
+                }
+            }
+        }
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            string keyword = txtTim.Text.Trim();
+            if(!string.IsNullOrWhiteSpace(keyword))
+            {
+                SearchInAllCells(keyword);
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập từ khóa tìm kiếm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            txtTim.Clear();
         }
     }
 }

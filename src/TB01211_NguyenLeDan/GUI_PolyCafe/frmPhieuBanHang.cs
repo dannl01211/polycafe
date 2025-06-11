@@ -321,6 +321,39 @@ namespace GUI_PolyCafe
                 MessageBox.Show("Lỗi khi xóa phiếu bán hàng: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void SearchInAllCells(string keyword)
+        {
+            foreach (DataGridViewRow row in dgvPhieuBanHang.Rows)
+            {
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.Value != null && cell.Value.ToString().ToLower().Contains(keyword.ToLower()))
+                    {
+
+                        row.Selected = true;
+                        break;
+                    }
+                    else
+                    {
+                        row.Selected = false;
+                    }
+                }
+            }
+        }
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            string keyword = txtTim.Text.Trim();
+            if (!string.IsNullOrWhiteSpace(keyword))
+            {
+                SearchInAllCells(keyword);
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập từ khóa tìm kiếm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            txtTim.Clear();
+        }
     }
 }
 
