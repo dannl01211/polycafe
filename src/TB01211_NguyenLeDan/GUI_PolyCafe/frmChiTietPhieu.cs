@@ -69,8 +69,6 @@ namespace GUI_PolyCafe
             dgvSanPham.Columns["MaLoai"].HeaderText = "Loại Sản Phẩm";
             dgvSanPham.Columns["HinhAnh"].HeaderText = "Hình Ảnh";
 
-
-            dgvSanPham.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void LoadChiTietPhieu(string maPhieu)
@@ -92,7 +90,7 @@ namespace GUI_PolyCafe
             {
                 col.ReadOnly = true;
             }
-            dgvChiTietPhieu.Columns["SoLuong"].ReadOnly = false;
+            
         }
 
         private void dgvSanPham_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
