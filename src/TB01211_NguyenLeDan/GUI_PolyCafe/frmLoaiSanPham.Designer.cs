@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtTenLoai = new System.Windows.Forms.TextBox();
             this.txtMaLoai = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -106,19 +106,19 @@
             // dgvDSLoaiSP
             // 
             this.dgvDSLoaiSP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LightBlue;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvDSLoaiSP.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvDSLoaiSP.Location = new System.Drawing.Point(553, 78);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDSLoaiSP.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvDSLoaiSP.Location = new System.Drawing.Point(582, 75);
             this.dgvDSLoaiSP.Name = "dgvDSLoaiSP";
             this.dgvDSLoaiSP.RowHeadersWidth = 51;
             this.dgvDSLoaiSP.RowTemplate.Height = 24;
-            this.dgvDSLoaiSP.Size = new System.Drawing.Size(735, 550);
+            this.dgvDSLoaiSP.Size = new System.Drawing.Size(735, 591);
             this.dgvDSLoaiSP.TabIndex = 37;
             this.dgvDSLoaiSP.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDSLoaiSP_CellDoubleClick);
             // 
@@ -133,9 +133,9 @@
             this.groupBox1.Controls.Add(this.btnThem);
             this.groupBox1.Controls.Add(this.txtTim);
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(56, 350);
+            this.groupBox1.Location = new System.Drawing.Point(12, 365);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(428, 263);
+            this.groupBox1.Size = new System.Drawing.Size(564, 217);
             this.groupBox1.TabIndex = 38;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chức năng";
@@ -143,7 +143,7 @@
             // btnTim
             // 
             this.btnTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTim.Location = new System.Drawing.Point(33, 189);
+            this.btnTim.Location = new System.Drawing.Point(53, 138);
             this.btnTim.Name = "btnTim";
             this.btnTim.Size = new System.Drawing.Size(95, 37);
             this.btnTim.TabIndex = 36;
@@ -154,7 +154,7 @@
             // btnLamMoi
             // 
             this.btnLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLamMoi.Location = new System.Drawing.Point(307, 52);
+            this.btnLamMoi.Location = new System.Drawing.Point(340, 56);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(101, 39);
             this.btnLamMoi.TabIndex = 35;
@@ -165,9 +165,9 @@
             // btnThoat
             // 
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(85, 127);
+            this.btnThoat.Location = new System.Drawing.Point(460, 56);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(103, 37);
+            this.btnThoat.Size = new System.Drawing.Size(89, 37);
             this.btnThoat.TabIndex = 34;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -176,9 +176,9 @@
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(239, 127);
+            this.btnXoa.Location = new System.Drawing.Point(235, 58);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(110, 37);
+            this.btnXoa.Size = new System.Drawing.Size(87, 37);
             this.btnXoa.TabIndex = 33;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -187,9 +187,9 @@
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(156, 52);
+            this.btnSua.Location = new System.Drawing.Point(126, 58);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(110, 39);
+            this.btnSua.Size = new System.Drawing.Size(92, 39);
             this.btnSua.TabIndex = 32;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -198,9 +198,9 @@
             // btnThem
             // 
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(20, 52);
+            this.btnThem.Location = new System.Drawing.Point(23, 58);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(103, 39);
+            this.btnThem.Size = new System.Drawing.Size(88, 39);
             this.btnThem.TabIndex = 31;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -209,9 +209,9 @@
             // txtTim
             // 
             this.txtTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTim.Location = new System.Drawing.Point(166, 199);
+            this.txtTim.Location = new System.Drawing.Point(171, 148);
             this.txtTim.Name = "txtTim";
-            this.txtTim.Size = new System.Drawing.Size(200, 27);
+            this.txtTim.Size = new System.Drawing.Size(239, 27);
             this.txtTim.TabIndex = 30;
             // 
             // txtGhiChu

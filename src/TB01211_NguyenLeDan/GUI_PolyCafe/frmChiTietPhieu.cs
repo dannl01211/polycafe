@@ -61,7 +61,7 @@ namespace GUI_PolyCafe
         private void LoadSanPham()
         {
             BUSSanPham sp = new BUSSanPham();
-            lstSanPham = sp.GetSanPhamList(1);
+            lstSanPham = sp.GetSanPhamList(0);
             dgvSanPham.DataSource = lstSanPham;
             dgvSanPham.Columns["MaSanPham"].HeaderText = "Mã Sản Phẩm";
             dgvSanPham.Columns["TenSanPham"].HeaderText = "Tên Sản Phẩm";
