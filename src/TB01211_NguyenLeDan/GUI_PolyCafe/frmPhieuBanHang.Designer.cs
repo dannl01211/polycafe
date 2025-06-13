@@ -197,25 +197,25 @@
             this.groupBox2.Controls.Add(this.btnSua);
             this.groupBox2.Controls.Add(this.btnThem);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(839, 58);
+            this.groupBox2.Location = new System.Drawing.Point(797, 81);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(456, 258);
+            this.groupBox2.Size = new System.Drawing.Size(510, 236);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức năng";
             // 
             // txtTim
             // 
-            this.txtTim.Location = new System.Drawing.Point(65, 198);
+            this.txtTim.Location = new System.Drawing.Point(63, 177);
             this.txtTim.Name = "txtTim";
             this.txtTim.Size = new System.Drawing.Size(233, 27);
             this.txtTim.TabIndex = 6;
             // 
             // btnTim
             // 
-            this.btnTim.Location = new System.Drawing.Point(330, 177);
+            this.btnTim.Location = new System.Drawing.Point(327, 163);
             this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(54, 48);
+            this.btnTim.Size = new System.Drawing.Size(86, 41);
             this.btnTim.TabIndex = 5;
             this.btnTim.Text = "Tìm";
             this.btnTim.UseVisualStyleBackColor = true;
@@ -223,9 +223,9 @@
             // 
             // btnLammoi
             // 
-            this.btnLammoi.Location = new System.Drawing.Point(248, 118);
+            this.btnLammoi.Location = new System.Drawing.Point(377, 44);
             this.btnLammoi.Name = "btnLammoi";
-            this.btnLammoi.Size = new System.Drawing.Size(136, 40);
+            this.btnLammoi.Size = new System.Drawing.Size(127, 40);
             this.btnLammoi.TabIndex = 4;
             this.btnLammoi.Text = "Làm mới";
             this.btnLammoi.UseVisualStyleBackColor = true;
@@ -233,7 +233,7 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(87, 118);
+            this.btnThoat.Location = new System.Drawing.Point(131, 105);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(113, 40);
             this.btnThoat.TabIndex = 3;
@@ -243,9 +243,9 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(304, 47);
+            this.btnXoa.Location = new System.Drawing.Point(258, 48);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(108, 36);
+            this.btnXoa.Size = new System.Drawing.Size(98, 36);
             this.btnXoa.TabIndex = 2;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -253,7 +253,7 @@
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(171, 47);
+            this.btnSua.Location = new System.Drawing.Point(131, 47);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(105, 37);
             this.btnSua.TabIndex = 1;
@@ -263,9 +263,9 @@
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(32, 47);
+            this.btnThem.Location = new System.Drawing.Point(16, 47);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(107, 37);
+            this.btnThem.Size = new System.Drawing.Size(97, 37);
             this.btnThem.TabIndex = 0;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;

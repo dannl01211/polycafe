@@ -20,8 +20,8 @@ namespace BLL_PolyCafe
         {
             try
             {
-                ct.MaPhieu = dalChiTietPhieu.generateChiTietID();
-                if (string.IsNullOrEmpty(ct.MaPhieu))
+                ct.MaChiTiet = dalChiTietPhieu.generateChiTietID();
+                if (string.IsNullOrEmpty(ct.MaChiTiet))
                 {
                     return "Mã chi tiết phiếu không hợp lệ.";
                 }

@@ -90,7 +90,7 @@
             // 
             this.btnLammoi.BackColor = System.Drawing.Color.White;
             this.btnLammoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLammoi.Location = new System.Drawing.Point(1156, 165);
+            this.btnLammoi.Location = new System.Drawing.Point(1177, 134);
             this.btnLammoi.Name = "btnLammoi";
             this.btnLammoi.Size = new System.Drawing.Size(121, 43);
             this.btnLammoi.TabIndex = 37;
@@ -102,7 +102,7 @@
             // 
             this.btnThoat.BackColor = System.Drawing.Color.White;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(1011, 199);
+            this.btnThoat.Location = new System.Drawing.Point(911, 193);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(121, 43);
             this.btnThoat.TabIndex = 36;
@@ -114,7 +114,7 @@
             // 
             this.btnXoa.BackColor = System.Drawing.Color.White;
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(1011, 134);
+            this.btnXoa.Location = new System.Drawing.Point(1050, 134);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(121, 43);
             this.btnXoa.TabIndex = 35;
@@ -126,7 +126,7 @@
             // 
             this.btnSua.BackColor = System.Drawing.Color.White;
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(830, 199);
+            this.btnSua.Location = new System.Drawing.Point(911, 134);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(121, 43);
             this.btnSua.TabIndex = 34;
@@ -138,7 +138,7 @@
             // 
             this.btnThem.BackColor = System.Drawing.Color.White;
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(830, 134);
+            this.btnThem.Location = new System.Drawing.Point(784, 134);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(121, 43);
             this.btnThem.TabIndex = 33;
@@ -161,7 +161,7 @@
             // 
             this.btnTim.BackColor = System.Drawing.Color.White;
             this.btnTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTim.Location = new System.Drawing.Point(1156, 80);
+            this.btnTim.Location = new System.Drawing.Point(1166, 77);
             this.btnTim.Name = "btnTim";
             this.btnTim.Size = new System.Drawing.Size(104, 36);
             this.btnTim.TabIndex = 40;
@@ -173,7 +173,7 @@
             // 
             this.txtTim.BackColor = System.Drawing.Color.White;
             this.txtTim.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTim.Location = new System.Drawing.Point(850, 86);
+            this.txtTim.Location = new System.Drawing.Point(889, 83);
             this.txtTim.Name = "txtTim";
             this.txtTim.Size = new System.Drawing.Size(252, 30);
             this.txtTim.TabIndex = 39;
