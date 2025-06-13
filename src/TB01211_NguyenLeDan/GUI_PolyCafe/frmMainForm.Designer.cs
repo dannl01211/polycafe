@@ -63,7 +63,7 @@
             this.huongDanToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1349, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1339, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -218,7 +218,7 @@
             // 
             this.pnMain.Location = new System.Drawing.Point(0, 40);
             this.pnMain.Name = "pnMain";
-            this.pnMain.Size = new System.Drawing.Size(1337, 729);
+            this.pnMain.Size = new System.Drawing.Size(1337, 742);
             this.pnMain.TabIndex = 2;
             this.pnMain.Paint += new System.Windows.Forms.PaintEventHandler(this.pnMain_Paint);
             // 
@@ -226,10 +226,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1349, 772);
+            this.ClientSize = new System.Drawing.Size(1339, 772);
             this.Controls.Add(this.pnMain);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximumSize = new System.Drawing.Size(1357, 819);
+            this.MinimumSize = new System.Drawing.Size(1357, 819);
             this.Name = "frmMainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMainForm";
